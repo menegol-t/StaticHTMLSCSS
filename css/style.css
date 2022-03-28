@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Yeseva+One&display=swap');
+
+*{
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	background-color: lightblue;
+	font-size: 2rem;
+}
+
+nav {
+	padding: 0 1%;
+	border: none;
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 2;
+	width: auto;
+}
+	nav a h1{
+		color: black;
+		font-weight: 500;
+		font-size: 6rem;
+		display: inline-block;
+		width: auto;
+		line-height: 1.2;
+	}	
+	nav ul{
+		list-style-type: none;
+		width: auto;
+		white-space: nowrap;
+	}
+		nav ul li{
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 1.5%;
+		} 
+			nav ul li a:hover{
+				color: white;
+			}
+	nav form{
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+main{
+	margin:1% 2%;
+}
+
+section article ul{
+	list-style-type: square;
+}
+section article ul span{
+	position: relative;
+  	left: -6px;
+}
+footer{
+	margin-top: 2%;
+	border-right: none;
+	border-left: none;
+	background-color: grey;
+	padding: 2%;
+	width: 96%;
+	display: flex;
+}
+
+	footer div ul{
+				list-style-type: none;
+				padding-left:  1%;
+			}
+				footer ul li{
+					color: white;
+				}
+	footer h4{
+		margin-top: 3% ;
+	}
+
+.contenedor{
+	display: grid;
+}
+/* CLASES GENERALES */
+.txtSmall{
+	font-size: 1.5rem;
+}
+
+.txtMed{
+	font-size: 2.5rem;
+}
+
+.txtBig{
+	font-size: 5rem;
+}
+
+.txtCenter{
+	text-align: center;
+}
+
+.txtLeft{
+	text-align: left;
+}
+
+.txtRight{
+	text-align: right;
+}
+
+.txtWhite{
+	color: white;
+}
+
+.txtBlack{
+	color: black;
+}
+
+.bgBrown{
+	background-color: #E0A367;
+}
+
+.bgWhite{
+	background-color: white;
+}
+
+.bgBlack{
+	background-color: black;
+}
+
+.fontSpecial{
+	font-family: 'Yeseva One', sans-serif;
+}
+
+.border{
+	border: 2px black solid;
+}
+
+.spBorder{
+	border: 2px  dashed #E0A367;
+}
+
+.margin{
+	margin: 2% 0;
+}
+
+/*grid responsive, empieza por index*/
+
+@media (max-width: 768px){
+	.contenedor{
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(3, auto);
+		grid-template-areas: "nav"
+		"main"
+		"footer"
+	}
+	nav a h1{
+		font-size: 3rem;
+	}	
+	div nav form label{
+		display: none;
+	}
+	nav form input{
+		margin-bottom: 4%;
+	}
+	.header__carrusel img{
+		width: 97%;
+
+	}
+	#articleEstuche{
+		margin: 4% 1%;
+	}
+	.article__estucheLista{
+		font-size: 1.3rem;
+	}
+	.article__estucheLista--padding{
+		padding-right: 0;
+	}
+	.article__productos{
+		flex-wrap: wrap;
+		align-content: center;
+	}
+	#lente_izquierdo{
+		display: inline-block;
+		width: 70%;
+		margin: 2% auto;
+	}
+	.div__VerMasProd{
+		width: 70%;
+		margin: 0 auto 2% auto;
+	}
+	#lente_derecho{
+		display: none;
+	}
+	footer{
+		margin-top: 5%;
+		width: auto;
+		display: block;
+	}
+	footer div div ul li{
+		font-size: 1.3rem;
+	}
+	footer div{
+		font-size:  1.7rem;
+	}
+	.div__map--width{
+		margin: 0 auto;
+		width: 200%;
+	}
+	/*novedades */
+	.article__newsletter--responsive{
+		font-size: 1.9rem !important;
+	}
+	.fieldset__--margin{
+		margin: 3% 10% !important;
+		width: 80% !important;
+		font-size: 1.7rem;
+	}
+	.article__vistazo{
+		font-size: 1.9rem;
+	}
+	.article__lentesNuevos{
+		flex-wrap: wrap;
+		align-content: center;
+		margin-top: 3%;
+	}
+	.figure__novedades{
+		display: inline-block;
+		width: 70%;
+		margin: 0 auto 2% auto;
+	}
+}
+
+@media (max-width: 970px) {
+	div nav ul{
+		display: none;
+	}
+}
+/*el codigo de arriba es porque todavia no colapse
+ la nav con el boton hamburguesa, un place holder de momento*/
+@media only screen and (min-width: 768px) {
+    .contenedor{
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(3, auto);
+		grid-template-areas: "nav"
+		"main"
+		"footer"
+		
+	}
+}
+#cartel{
+	grid-area: cartel;
+}
+#nav{
+	grid-area: nav;
+}
+#main{
+	grid-area: main;
+}
+#articleEstuche{
+	grid-area: estuche;
+}
+#articleMasProd{
+	grid-area: article;
+}
+#pie{
+	grid-area: footer;
+}
+
+/*BEM DE INDEX*/
+
+.div__header{
+	background-color: black;
+	padding: 0.5% 0;
+}
+	div p{
+		color: white;
+	}
+
+.header__carrusel a{
+	 display: block;
+}
+	.header__carrusel img{
+		width: 100%;
+		margin: 1% auto;
+	}
+
+.article__estuche{
+	width: 85%;
+	margin:  3% auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+	.article__imgEstuche{ 
+		width: 80%;
+	}
+	.article__estucheLista{
+		display: inline-block;
+		padding-left: 7%;
+	}
+
+.article__productos{
+	margin: 0.5% auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+}	
+	.article__lentes{
+		width: 35%;
+	}
+	.article__lentes img{
+		width: 100% ;
+	}
+
+
+	.div__VerMasProd{
+		background-color: #E0A367;
+		display: inline-block;
+		padding:  1%;
+		width: auto;
+		top: 0;
+		z-index: 1;
+	}
+
+		section article div a p:hover{
+			color: white;
+		}
+
+
+/*BEM PRODUCTOS*/
+
+
+.section__anteojo--font{
+	font-weight: 500;
+	text-align: center;
+	margin: 3% 1%;
+}
+
+.section__divAnteojos--margin{
+	margin: 0% auto;
+}
+.section__modelosDimensiones--font{
+	font-weight: 300;
+	margin-left: 40%;
+	margin-right: 5%;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.section__ul--format{
+	list-style-type: square;
+	display: inline-block;
+	text-align: center;
+	margin: 2%;
+	vertical-align: middle;
+}
+
+.table--align{
+	margin: 0 auto;
+}
+
+table,th,td {
+  border: 1px solid black;
+}
+
+table th,table td {
+  padding: auto;
+}
+
+.table__ol--padding{
+	padding-left: 20%;
+	padding-right: 30px;
+}
+
+section article figure{
+	margin: 4%;
+	display: inline-block;
+	width: 40%;
+}
+	section article figure img{
+		width: 100%;
+	}
+
+/* BEM NOVEDADES*/ 
+
+.article__newsletter--responsive{
+	font-size: 5rem;
+}
+.fieldset__--margin{
+	margin: 3% 25%;
+	padding-top: 1%;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+	.fieldset__div--margin{
+		margin: 0 0 2% 2%;
+	}
+	.fieldset__input--padding{
+			padding: 1%;
+			width: 70%;
+		}
+	.fieldset__frecuencia--width{
+		width: 33%;
+	}
+	
+	.fieldset__txtArea textarea{
+			width:  100%;
+		}
+	.fieldset__txtArea input{
+		width: 45%;
+		margin-bottom: 5%;
+	}
+.article__lentesNuevos{
+	display: flex;
+	justify-content: space-between;
+}
+
+/* BEM NOSOTROS */
+
+.header__h2--hoverWhite:hover{
+	color:  white;
+}
+
+.header__h2--margin{
+	margin: 3% 0;
+}
+
+.article__h3{
+	margin: 0 0 2% 5%;
+}
+
+.article__p{
+	margin: 0 15%;
+	text-align: justify;
+	line-height: 3rem;
+}
+
+/* BEM FAQ */
+.h1__size{
+	font-size: 4rem;
+	margin-top: 3%;
+}
+
+.article__h2--format{
+	margin: 1% 5%;
+}
+
+#firstQuestion{
+	margin-top: 4%;
+}
+
+.article__p--format{
+	margin: 0 7% 3% 7%;
+	text-align: justify;
+}
+
+#lastQuestion{
+	margin-bottom: 5%;
+}
+
+/*FOOTER*/
+
+.div__map--width{
+	width: 50%;
+}
+
+.footer__div--margin{
+	display: inline-block;
+	margin-left: 3%;
+	justify-content: flex-start;
+}
+
+.footer__divdiv--inlineblock{
+	display: inline-block;
+	justify-self: flex-start;
+}
+
+.footer__ul--margin{
+	margin-top: 3%;
+}
+
+.footer__newsletter:hover{
+	color: white;
+}
+
+.footer__a--width{
+	width: 15%;
+}
+
+.footer__img--width{
+	width: 29.5%;
+}
+
+.footer__img--margin{
+	margin: 3%;
+	width: 15%;
+}
