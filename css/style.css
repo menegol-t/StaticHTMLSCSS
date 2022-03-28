@@ -14,7 +14,8 @@ html{
 }
 
 body{
-	background-color: lightblue;
+	background: rgb(2,0,36);
+	background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(184,215,255,1) 0%, rgba(154,246,255,1) 100%);
 	font-size: 2rem;
 }
 
@@ -36,23 +37,37 @@ nav {
 		display: inline-block;
 		width: auto;
 		line-height: 1.2;
+		animation-name: txtAlpha;
+		animation-duration: 2.5s;
 	}	
 	nav ul{
 		list-style-type: none;
 		width: auto;
 		white-space: nowrap;
+		animation-name: txtAlpha;
+		animation-duration: 2s;
 	}
 		nav ul li{
 			display: inline-block;
 			vertical-align: middle;
 			margin-right: 1.5%;
-		} 
+		} 	
+			nav ul li a{
+				background-image: linear-gradient(currentColor, currentColor);
+   				background-position: 0% 100%;
+    			background-repeat: no-repeat;
+    			background-size: 0% 2px;
+    			transition: background-size .3s;
+			}
 			nav ul li a:hover{
 				color: white;
+				background-size: 100% 2px;
 			}
 	nav form{
 		display: inline-block;
 		vertical-align: middle;
+		animation-name: txtAlpha;
+		animation-duration: 2s;
 	}
 
 main{
@@ -151,6 +166,15 @@ footer{
 	margin: 2% 0;
 }
 
+.scale:hover{
+	transform: scale(1.03);
+	transition: scale 3s;
+}
+
+@keyframes txtAlpha{
+	from{opacity: 0;}	
+	to{opacity: 1;}
+}
 /*grid responsive, empieza por index*/
 
 @media (max-width: 768px){
@@ -306,6 +330,16 @@ footer{
 		display: inline-block;
 		padding-left: 7%;
 	}
+	.article__estucheLista--padding{
+		background-image: linear-gradient(currentColor, currentColor);
+		background-position: 0% 100%;
+		background-repeat: no-repeat;
+		background-size: 0% 2px;
+		transition: background-size .3s;
+	}
+		.article__estucheLista--padding:hover{
+			background-size: 100% 2px;
+		}
 
 .article__productos{
 	margin: 0.5% auto;
@@ -330,7 +364,7 @@ footer{
 		top: 0;
 		z-index: 1;
 	}
-
+	
 		section article div a p:hover{
 			color: white;
 		}
@@ -448,6 +482,18 @@ section article figure{
 	line-height: 3rem;
 }
 
+.section--flex{
+	display: flex;
+}
+
+.figure__image--width{
+	width: 30%;
+	margin: 2% auto;
+}
+
+.caption--marginTop{
+	margin-top: 3%;
+}
 /* BEM FAQ */
 .h1__size{
 	font-size: 4rem;
@@ -465,6 +511,7 @@ section article figure{
 .article__p--format{
 	margin: 0 7% 3% 7%;
 	text-align: justify;
+	color: black;
 }
 
 #lastQuestion{
