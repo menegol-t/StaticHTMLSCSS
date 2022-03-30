@@ -3,7 +3,7 @@
 
 *{
 	font-family: 'Open Sans', sans-serif;
-	text-decoration: none;
+	text-decoration: none !important;
 	color: black;
 	margin: 0;
 	padding: 0;
@@ -16,20 +16,9 @@ html{
 body{
 	background: rgb(2,0,36);
 	background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(184,215,255,1) 0%, rgba(154,246,255,1) 100%);
-	font-size: 2rem;
+	font-size: 2rem !important;
 }
 
-nav {
-	padding: 0 1%;
-	border: none;
-	position: sticky;
-	top: 0;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	z-index: 2;
-	width: auto;
-}
 	nav a h1{
 		color: black;
 		font-weight: 500;
@@ -40,30 +29,25 @@ nav {
 		animation-name: txtAlpha;
 		animation-duration: 2.5s;
 	}	
-	nav ul{
+	nav div div ul{
 		list-style-type: none;
 		width: auto;
 		white-space: nowrap;
 		animation-name: txtAlpha;
 		animation-duration: 2s;
-	}
-		nav ul li{
-			display: inline-block;
-			vertical-align: middle;
-			margin-right: 1.5%;
-		} 	
-			nav ul li a{
-				background-image: linear-gradient(currentColor, currentColor);
-   				background-position: 0% 100%;
-    			background-repeat: no-repeat;
-    			background-size: 0% 2px;
-    			transition: background-size .3s;
-			}
-			nav ul li a:hover{
-				color: white;
-				background-size: 100% 2px;
-			}
-	nav form{
+	} 	
+		nav div div ul li a{
+			background-image: linear-gradient(currentColor, currentColor);
+			background-position: 0% 100%;
+			background-repeat: no-repeat;
+			background-size: 0% 2px;
+			transition: background-size .3s;
+		} 
+		.nav-link:hover{
+			color: white !important;
+			background-size: 100% 2px;
+		}
+	nav div div form{
 		display: inline-block;
 		vertical-align: middle;
 		animation-name: txtAlpha;
@@ -71,7 +55,7 @@ nav {
 	}
 
 main{
-	margin:1% 2%;
+	margin:1% 1.5%;
 }
 
 section article ul{
@@ -87,8 +71,9 @@ footer{
 	border-left: none;
 	background-color: grey;
 	padding: 2%;
-	width: 96%;
+	width: 100%;
 	display: flex;
+	font-size: 2rem
 }
 
 	footer div ul{
@@ -109,9 +94,16 @@ footer{
 .txtSmall{
 	font-size: 1.5rem;
 }
+.txtSmall2{
+	font-size: 2rem;
+}
 
 .txtMed{
 	font-size: 2.5rem;
+}
+
+.txtMed2{
+	font-size: 4rem;
 }
 
 .txtBig{
@@ -170,6 +162,29 @@ footer{
 	transform: scale(1.03);
 	transition: scale 3s;
 }
+.scale2:hover{
+	transform: scale(1.08);
+	transition: scale 3s;
+}
+.width2{
+	width: 90%;
+}
+
+#nav__sticky{
+	border: none;
+	position: sticky;
+	top: 0px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 2;
+	width: auto;
+}
+
+.form__width{
+	width: 20%;
+	font-size: 2rem;
+}
 
 @keyframes txtAlpha{
 	from{opacity: 0;}	
@@ -193,6 +208,9 @@ footer{
 	}
 	nav form input{
 		margin-bottom: 4%;
+	}
+	.input__lenght{
+		width: 20%;
 	}
 	.header__carrusel img{
 		width: 97%;
@@ -218,7 +236,9 @@ footer{
 	}
 	.div__VerMasProd{
 		width: 70%;
-		margin: 0 auto 2% auto;
+		margin: 0 auto;
+		padding: 5% 0 0 0;
+
 	}
 	#lente_derecho{
 		display: none;
@@ -237,6 +257,18 @@ footer{
 	.div__map--width{
 		margin: 0 auto;
 		width: 200%;
+	}
+	/*productos*/
+	#disponibles{
+		font-size: 2rem;
+	}
+	#dimensiones__{
+		font-size: 2rem;
+		margin: 0 auto;
+	}
+	#dimensiones__ul{
+		margin-left: 2%;
+		font-size: 1.7rem;
 	}
 	/*novedades */
 	.article__newsletter--responsive{
@@ -262,13 +294,7 @@ footer{
 	}
 }
 
-@media (max-width: 970px) {
-	div nav ul{
-		display: none;
-	}
-}
-/*el codigo de arriba es porque todavia no colapse
- la nav con el boton hamburguesa, un place holder de momento*/
+
 @media only screen and (min-width: 768px) {
     .contenedor{
 		grid-template-columns: 100%;
@@ -302,19 +328,15 @@ footer{
 
 .div__header{
 	background-color: black;
-	padding: 0.5% 0;
+	padding: 0.5% 0 0.1% 0;
 }
 	div p{
 		color: white;
 	}
 
-.header__carrusel a{
-	 display: block;
+.header__z-index{
+	z-index: 1;
 }
-	.header__carrusel img{
-		width: 100%;
-		margin: 1% auto;
-	}
 
 .article__estuche{
 	width: 85%;
@@ -359,7 +381,7 @@ footer{
 	.div__VerMasProd{
 		background-color: #E0A367;
 		display: inline-block;
-		padding:  1%;
+		padding:  0.75% 1% 0.25% 1%;
 		width: auto;
 		top: 0;
 		z-index: 1;

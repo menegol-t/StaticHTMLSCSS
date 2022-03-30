@@ -7,35 +7,54 @@
 	<link rel="icon" href="../img/chiquitos/favicon.png">
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/animate.css">
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
 	<!-- txt antes de menu-->
-	<div class="div__header">
+	<div class="div__header" id="cartel">
 		<p class="txtCenter fontSpecial txtSmall">Premium designer eyewear.</p>
 	</div>
-	<div class="contenedor">
-		<!--menu principal-->
-		<nav class="bgBrown">
-			<a href="../index.html">
-				<h1 class="txtLeft fontSpecial animate__pulse">AUBIER</h1>
-			</a>
-			<ul>
-				<li><a href="../index.html">Inicio</a></li>
-				<li><a href="productos.html">Productos</a></li>
-				<li><a href="novedades.html">Novedades</a></li>
-				<li><a href="nosotros.html">Nosotros</a></li>
-				<li><a href="faq.html">FAQ</a></li>
-			</ul>
-			<form action="estonolosehacerjeje.php" method="post" id="producto" class="txtRight">
-				<label for="producto">Búsqueda</label>
-				<input type="text" placeholder="Nombre de anteojos..." name="producto" id="producto">
-			</form>
-		</nav>
+	<!--comienza navbar boostrap-->
+	<nav class="navbar navbar-expand-lg navbar-light bgBrown nav_sitcky" id="nav__sticky">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="../index.html">
+	    	<h1 class="txtLeft fontSpecial animate__pulse ms-3">AUBIER</h1>
+	    </a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav m-auto mb-2 mb-lg-0 txtMed">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active" href="productos.html">Productos</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active" href="novedades.html">Novedades</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active" href="nosotros.html">Nosotros</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active" href="faq.html">FAQ</a>
+	        </li>
+	      </ul>
+	      <form class="d-flex me-3 form__width">
+	        <input class="form-control me-2 input__lenght" type="search" placeholder="Sus lentes..." aria-label="Search">
+	        <button class="btn btn-outline-light btn-lg" type="submit">Búqueda</button>
+	      </form>
+	    </div>
+	  </div>
+	</nav>	
+	<!--termina nav bosstrap-->
 		<main>
 			<!--newsletter -->
 			<section>
 				<article>
-					<h2 class="txtCenter fontSpecial article__newsletter--responsive animate__animated animate__fadeInLeft">Mantente al tanto con el newsletter!</h2>
+					<h2 class="txtCenter txtMed2 fontSpecial article__newsletter--responsive animate__animated animate__fadeInLeft">Mantente al tanto con el newsletter!</h2>
 					<form action="ProcesarDatosAhre.php" method="post" enctype="" id="contacto">
 						<fieldset class="fieldset__--margin spBorder">
 							<legend class="txtCenter">Tus Datos</legend>
@@ -75,29 +94,29 @@
 			<section>
 				<!-- vistazo de cosas nuevas -->
 				<article>
-					<h2 class="txtCenter fontSpecial article__vistazo animate__animated animate__fadeIn">Se vienen cosas nuevas! Aca tenes un vistazo:</h2>
+					<h2 class="txtCenter fontSpecial article__vistazo animate__animated animate__fadeIn txtMed2">Se vienen cosas nuevas! Aca tenes un vistazo:</h2>
 					<div class="article__lentesNuevos">
 						<figure class="figure__novedades">
 							<img src="../img/toulouse/toulouserayado.JPG" alt="Anteojos de lente grueso a rayas.">
-							<figcaption class="txtCenter fontSpecial">Toulouse</figcaption>
+							<figcaption class="txtCenter fontSpecial pt-3">Toulouse</figcaption>
 						</figure>
 						<figure class="figure__novedades">
 							<img src="../img/burdeos/burdeos.JPG" alt="Anteojos clasicos desde atras">
-							<figcaption class="txtCenter fontSpecial">Burdeos</figcaption>
+							<figcaption class="txtCenter fontSpecial pt-3">Burdeos</figcaption>
 						</figure>
 					</div>
 				</article>
 			</section>
 		</main>
 		<footer>
-			<!-- mapita -->
+		<!-- mapita -->
 			<div class="div__map--width">
 				<iframe class="footer__maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.8978569292613!2d-58.673588060694605!3d-34.55872742637743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbc40e1119923%3A0x4ccb7573c6081f24!2sC.%20Tucum%C3%A1n%20370%2C%20Bella%20Vista%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1645826674923!5m2!1ses-419!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 			</div>
 			<!-- info de la empresa -->
 			<div class="footer__div--margin">
 				<div class="footer__divdiv--inlineblock">
-					<h4 class="txtWhite fontSpecial">CONTACTO</h4>
+					<h4 class="txtWhite txtMed fontSpecial">CONTACTO</h4>
 					<ul class="txtSmall">
 						<li class="footer__ul--margin">Ubicación: C. Tucumán 370, Bella Vista, <br>Provincia de Buenos Aires</li>
 						<li class="footer__ul--margin">Teléfono: +54 9 11 3700-3700</li>
@@ -106,7 +125,7 @@
 				</div>
 				<div class=" footer__divdiv--inlineblock">
 					<!-- info de redes -->
-					<h4 class="txtWhite fontSpecial">NUESTRAS REDES</h4>
+					<h4 class="txtWhite txtMed  fontSpecial">NUESTRAS REDES</h4>
 						<a class="footer__a--width" href="https://wwww.facebook.com" target="_blank"> 
 							<img class="footer__img--width" src="../img/chiquitos/facebook1.png" alt="Aubier en facebook">
 						</a>
@@ -118,18 +137,20 @@
 						</a>
 				</div>
 					<!-- info del envio y pago-->
-					<h4 class="txtWhite fontSpecial">ENVÍOS A CABA Y GBA</h4>
-					<h5>- Formas de envío -</h5>
+					<h4 class="txtWhite txtMed fontSpecial">ENVÍOS A CABA Y GBA</h4>
+					<h5 class="txtSmall2">- Formas de envío -</h5>
 						<img class="footer__img--margin" src="../img/chiquitos/OCA.png" alt="OCA, compañia de envios">
 						<img class="footer__img--margin" src="../img/chiquitos/correoargentino.png" alt="correo argentino">
-					<h4 class="txtWhite fontSpecial">HASTA 6 CUOTAS SIN INTERÉS</h4>
-					<h5>- Formas de pago -</h5>
+					<h4 class="txtWhite txtMed  fontSpecial">HASTA 6 CUOTAS SIN INTERÉS</h4>
+					<h5 class="txtSmall2">- Formas de pago -</h5>
 						<img class="footer__img--margin" src="../img/chiquitos/paypal.png" alt="paypal">
 						<img class="footer__img--margin" src="../img/chiquitos/mercadopago.png" alt="mercado pago">
 						<img class="footer__img--margin" src="../img/chiquitos/visa.png" alt="visa">
 						<img class="footer__img--margin" src="../img/chiquitos/mastercard.png" alt="mastercard">
 			</div>
 		</footer>
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	</div>
 </body>
 </html>

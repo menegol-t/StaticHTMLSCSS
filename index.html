@@ -7,6 +7,8 @@
 	<link rel="icon" href="img/chiquitos/favicon.png">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animate.css">
+	 <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <!-- DISCLAIMER: la web es ficticia de un negocio que iban a sacar mi padre y sus amigos antes de la pandemia, por lo cual habia prototipos y fotos armadas reales, pero como vino la pandemia el proyecto se cancelo, asi que esta web sigue siendo plenamente ficticia-->
 <body>
@@ -14,35 +16,78 @@
 	<div class="div__header" id="cartel">
 		<p class="txtCenter fontSpecial txtSmall">Premium designer eyewear.</p>
 	</div>
-	<div class="contenedor">
-		<!--menu principal-->
-		<nav class="bgBrown" id="nav">
-			<a href="index.html">
-				<h1 class="txtLeft fontSpecial animate__pulse">AUBIER</h1>
-			</a>
-			<ul id="desapareceEnMobil"> <!-- esto desaparece en mobil hasta poner ahi el boton hamburguesa a futuro-->
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="pages/productos.html">Productos</a></li>
-				<li><a href="pages/novedades.html">Novedades</a></li>
-				<li><a href="pages/nosotros.html">Nosotros</a></li>
-				<li><a href="pages/faq.html">FAQ</a></li>
-			</ul>
-			<form  action="estonolosehacerjeje.php" method="post" id="producto" class="busqueda txtRight">
-				<label for="producto">Búsqueda</label>
-				<input type="text" placeholder="Nombre de anteojos..." name="producto" id="producto">
-			</form>
-		</nav>
-		<main id="main">
-			<!-- carrusel principal -->
-			<header class="header__carrusel" id="header">
-				<a href="pages/productos.html ">
-					<img src="img/mundo/posteagua.jpeg" alt="foto hermosos de lentes de madera sobre un poste en el muelle">
-				</a>
-			</header>
+
+	<!-- navbar de boostrap -->
+
+	<nav class="navbar navbar-expand-lg navbar-light bgBrown nav_sitcky" id="nav__sticky">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="index.html">
+	    	<h1 class="txtLeft fontSpecial animate__pulse ms-3">AUBIER</h1>
+	    </a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav m-auto mb-2 mb-lg-0 txtMed">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active" href="pages/productos.html">Productos</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active" href="pages/novedades.html">Novedades</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active" href="pages/nosotros.html">Nosotros</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active" href="pages/faq.html">FAQ</a>
+	        </li>
+	      </ul>
+	      <form class="d-flex me-3 form__width">
+	        <input class="form-control me-2" type="search" placeholder="Sus lentes..." aria-label="Search">
+	        <button class="btn btn-outline-light btn-lg" type="submit">Búqueda</button>
+	      </form>
+	    </div>
+	  </div>
+	</nav>	
+	<!-- termina nav boostrap-->
+	<main id="main">
+		<header class="header__z-index">
+			<!-- empieza carrusel boostrap -->
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			  <div class="carousel-indicators">
+			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			  </div>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img src="img/mundo/posteagua.jpg" class="d-block w-100" alt="Lentes modelo LeMans acomodados sobre un poste en el puerto">
+			    </div>
+			    <div class="carousel-item">
+			      <img src="img/dijon/dijon10.JPG" class="d-block w-100" alt="Modelo Dijon, con marco de mandera roja y negra a rayas">
+			    </div>
+			    <div class="carousel-item">
+			      <img src="img/mundo/marvesubio.jpg" class="d-block w-100" alt="Lentes modelo Lyon ">
+			    </div>
+			  </div>
+			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Previous</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Next</span>
+			  </button>
+			</div>
+		</header>
+	<!-- end carrusel boostrap -->
 			<section>
 				<!-- foto del estuche y caracteristicas de los lentes -->
 				<article class="margin article__estuche" id="articleEstuche">
-					<img src="img/estuche.JPG" alt="imagen del estuche de anteojos hacho de cuero naranja" class="article__imgEstuche"> 
+					<img src="img/estuche.JPG" alt="imagen del estuche de anteojos hacho de cuero naranja" class="article__imgEstuche img-thumbnail"> 
 					<ul class="txtMed article__estucheLista animate__animated animate__backInRight">
 						<li class="article__estucheLista--padding margin"><span>Únicos.</span></li>
 						<li class="article__estucheLista--padding margin"><span>Modernos.</span></li>
@@ -55,18 +100,18 @@
 			<section>
 				<!-- ejemplos de mas modelos y ver mas -->
 				<article class="margin article__productos" id="articleMasProd">
-					<a class="article__lentes scale" id="lente_izquierdo" href="pages/prodcutos.html">
-						<img class="scale" src="img/mundo/floreslindas.jpeg" alt="hermosos lentes de sol mirando hacia un horizonte sobre el mar">
+					<a class="article__lentes scale" id="lente_izquierdo" href="pages/productos.html">
+						<img class="scale img-thumbnail" src="img/mundo/floreslindas.jpeg" alt="hermosos lentes de sol mirando hacia un horizonte sobre el mar">
 					</a>
 
 					<div class="div__VerMasProd">
 						<a href="pages/productos.html">
-							<p class="txtBlack fontSpecial txtCenter">VER MÁS PRODUCTOS</p>
+							<p class="txtBlack fontSpecial txtCenter txtMed">VER MÁS PRODUCTOS</p>
 						</a>
 					</div>
 
-					<a class="article__lentes scale" id="lente_derecho" href="pages/prodcutos.html">
-						<img src="img/mundo/fotoedificios.jpeg" alt="anteojos de sol frente a un paisaje" class="scaele article__lentes">
+					<a class="article__lentes scale" id="lente_derecho" href="pages/productos.html">
+						<img src="img/mundo/fotoedificios.jpeg" alt="anteojos de sol frente a un paisaje" class="scale article__lentes img-thumbnail">
 					</a>	
 				</article>	
 			</section>				
@@ -79,7 +124,7 @@
 			<!-- info de la empresa -->
 			<div class="footer__div--margin">
 				<div class="footer__divdiv--inlineblock">
-					<h4 class="txtWhite fontSpecial">CONTACTO</h4>
+					<h4 class="txtWhite txtMed fontSpecial">CONTACTO</h4>
 					<ul class="txtSmall">
 						<li class="footer__ul--margin">Ubicación: C. Tucumán 370, Bella Vista, <br>Provincia de Buenos Aires</li>
 						<li class="footer__ul--margin">Teléfono: +54 9 11 3700-3700</li>
@@ -88,7 +133,7 @@
 				</div>
 				<div class=" footer__divdiv--inlineblock">
 					<!-- info de redes -->
-					<h4 class="txtWhite fontSpecial">NUESTRAS REDES</h4>
+					<h4 class="txtWhite txtMed fontSpecial">NUESTRAS REDES</h4>
 						<a class=" footer__a--width" href="https://wwww.facebook.com" target="_blank"> 
 							<img class="footer__img--width" src="img/chiquitos/facebook1.png" alt="Aubier en facebook">
 						</a>
@@ -96,16 +141,16 @@
 							<img class="footer__img--width" src="img/chiquitos/instagram1.png" alt="Aubier en instagram">
 						</a>
 						<a href="pages/novedades.html#contacto">
-							<h3 class="footer__newsletter">Suscribite al newsletter!</h3>
+							<h3 class="txtMed footer__newsletter pt-2">Suscribite al newsletter!</h3>
 						</a>
 				</div>
 					<!-- info del envio y pago-->
-					<h4 class="txtWhite fontSpecial">ENVÍOS A CABA Y GBA</h4>
-					<h5>- Formas de envío -</h5>
+					<h4 class="txtWhite txtMed fontSpecial">ENVÍOS A CABA Y GBA</h4>
+					<h5 class="txtSmall2">- Formas de envío -</h5>
 						<img class="footer__img--margin" src="img/chiquitos/OCA.png" alt="OCA, compañia de envios">
 						<img class="footer__img--margin" src="img/chiquitos/correoargentino.png" alt="correo argentino">
-					<h4 class="txtWhite fontSpecial">HASTA 6 CUOTAS SIN INTERÉS</h4>
-					<h5>- Formas de pago -</h5>
+					<h4 class="txtWhite fontSpecial txtMed">HASTA 6 CUOTAS SIN INTERÉS</h4>
+					<h5 class="txtSmall2">- Formas de pago -</h5>
 						<img class="footer__img--margin" src="img/chiquitos/paypal.png" alt="paypal">
 						<img class="footer__img--margin" src="img/chiquitos/mercadopago.png" alt="mercado pago">
 						<img class="footer__img--margin" src="img/chiquitos/visa.png" alt="visa">
@@ -113,5 +158,7 @@
 			</div>
 		</footer>
 	</div>
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
