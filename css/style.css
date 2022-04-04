@@ -334,6 +334,13 @@ footer{
 	grid-area: footer;
 }
 
+@media (min-width:768px) and (max-width: 940px){
+	.div__nosotros--marginFooter{
+		margin-bottom: 10%;
+	}
+}
+
+
 /*BEM DE INDEX*/
 
 .div__header{
