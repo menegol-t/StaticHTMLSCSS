@@ -44,7 +44,7 @@
 	      </ul>
 	      <form class="d-flex me-3 form__width">
 	        <input class="form-control me-2 input__lenght" type="search" placeholder="Sus lentes..." aria-label="Search">
-	        <button class="btn btn-outline-light btn-lg" type="submit">Búqueda</button>
+	        <button class="btn btn-outline-light btn-lg" type="submit"><span class="txtSmall">Búqueda</span></button>
 	      </form>
 	    </div>
 	  </div>
@@ -63,24 +63,36 @@
 		<section>
 			<!-- info de objetivos de la org -->
 			<article>
-				<h3 class="article__h3"> Sobre nosotros...</h3>
+				<h3 class="article__h3 txtMed fontSpecial"> Sobre nosotros...</h3>
 				<p class="article__p"> Somos una empresa de lentes creada por un lutier con una misión tan simple y compleja como hacer lentes originales de buena calidad, que al mismo tiempo sean sustentables y no sumen al conocido problema de la "fast-fashion". Por eso, nuestros lentes estan hechos de un material no solo recicable, si no que tambien renovable al ser extraidos de plantciones explicitamente previstas para crecer madera, sin contribuir a la deforestacion. Es por eso que presentamos el mayor cuidado a nuestros productos, como todos nuestros modelos son creados en nuestro taller con nuestros propios planos, somos capaces de presentar la mas alta calidad de eyewear posible.</p>
 			</article>
 		</section>
 		<section class="section--flex caption--marginTop">
 			<!-- info de integrantes -->
-			<figure class="figure__image--width">
-				<img width="100%" height="80%" src="../img/nosotrospablo.png" alt="Foto del CEO de Aubier de costado, Pablo, trabajando en uno de sus proyectos de Luteria.">
-				<figcaption class="txtCenter caption--marginTop"> CEO de Aubier: Pablo, jefe del departamento de marketing y produccion.</figcaption>
-			</figure>
-			<figure class="figure__image--width">
-				<img width="100%" height="80%" src="../img/nosotroscontrolplagas.jpg" alt="Imagen de Gala, Schnauzer Gigante, jefa del departamento de control de pestes.">
-				<figcaption class="txtCenter caption--marginTop">Gala, jefa del departamento de control de pestes. Y aspiradora automática, si hay comida.</figcaption>
-			</figure>
-			<figure class="figure__image--width">
-				<img width="100%" height="80%" src="../img/nosotrosestudio.jpeg" alt="Foto del taller a donde se crean los lentes y otros proyectos personales.">
-				<figcaption class="txtCenter caption--marginTop">Nuestro taller.</figcaption>
-			</figure>
+			<section>
+		<!--rows y cols de boostrap-->
+			<div class="container-fluid">
+			  <div class="row">
+			    <!-- los botones no llevan a ningun lado -->
+			    	<article class="col-md-4">
+						<figure class="figure__image--width">
+							<img width="100%" height="80%" src="../img/nosotrospablo.png" alt="Foto del CEO de Aubier de costado, Pablo, trabajando en uno de sus proyectos de Luteria.">
+							<figcaption class="txtCenter caption--marginTop">
+							<h4 class="fontSpecial txtMed">Pablo</h4> CEO de Aubier, jefe del departamento de marketing y produccion.</figcaption>
+						</figure>
+					</article>
+					<article class="col-md-4">
+						<figure class="figure__image--width">
+							<img width="100%" height="80%" src="../img/nosotroscontrolplagas.jpg" alt="Imagen de Gala, Schnauzer Gigante, jefa del departamento de control de pestes.">
+							<figcaption class="txtCenter caption--marginTop"><h4 class="fontSpecial txtMed">Gala</h4>Jefa del departamento de control de pestes. Y aspiradora automática, si hay comida.</figcaption>
+						</figure>
+					</article>
+					<article class="col-md-4">
+						<figure class="figure__image--width">
+							<img width="100%" height="80%" src="../img/nosotrosestudio.jpeg" alt="Foto del taller a donde se crean los lentes y otros proyectos personales.">
+							<figcaption class="txtCenter caption--marginTop"><h4 class="fontSpecial txtMed">Nuestro Taller</h4></figcaption>
+						</figure>
+					</article>
 		</section>
 	</main>
 	<footer>

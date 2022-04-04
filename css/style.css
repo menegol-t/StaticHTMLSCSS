@@ -141,9 +141,13 @@ footer{
 .bgBlack{
 	background-color: black;
 }
+.bgNormal{
+	background: transparent !important ;
+}
 
 .fontSpecial{
 	font-family: 'Yeseva One', sans-serif;
+	color: black;
 }
 
 .border{
@@ -152,6 +156,9 @@ footer{
 
 .spBorder{
 	border: 2px  dashed #E0A367;
+}
+.noneBorder{
+	border: none;
 }
 
 .margin{
@@ -292,6 +299,9 @@ footer{
 		width: 70%;
 		margin: 0 auto 2% auto;
 	}
+	/* nosotros*/
+
+	/*FAQ*/
 }
 
 
@@ -509,8 +519,9 @@ section article figure{
 }
 
 .figure__image--width{
-	width: 30%;
+	width: 100%;
 	margin: 2% auto;
+	height: 90%;
 }
 
 .caption--marginTop{
