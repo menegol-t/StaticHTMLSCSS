@@ -1,0 +1,181 @@
+//css comun, template para todos los html//
+html{
+	font-size: 62.5%;
+	*{
+		font-family: $fontMain;
+		text-decoration: none !important;
+		color: $txtBlack;
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		background: rgb(2,0,36);
+		background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(184,215,255,1) 0%, rgba(154,246,255,1) 100%);
+		font-size: $Small2;
+		nav a h1{
+			color: black;
+			font-weight: 500;
+			font-size: 6rem;
+			display: inline-block;
+			width: auto;
+			line-height: 1.2;
+			animation-name: txtAlpha;
+			animation-duration: 2.5s;
+		}	
+		nav div div ul{
+			list-style-type: none;
+			width: auto;
+			white-space: nowrap;
+			animation-name: txtAlpha;
+			animation-duration: 2s;
+			nav div div ul li a{
+				background-image: linear-gradient(currentColor, currentColor);
+				background-position: 0% 100%;
+				background-repeat: no-repeat;
+				background-size: 0% 2px;
+				transition: background-size .3s;
+			} 
+		}
+		.nav-link:hover{
+			color: white !important;
+			background-size: 100% 2px;
+		}
+		nav div div form{
+			display: inline-block;
+			vertical-align: middle;
+			animation-name: txtAlpha;
+			animation-duration: 2s;
+		}
+		main{
+			margin:1% 1.5%;
+			section article ul{
+				list-style-type: square;
+				section article ul span{
+					position: relative;
+				  	left: -6px;
+				}
+			}
+		}
+	}
+}
+
+
+.txtSmall{
+	font-size: $Small;
+}
+.txtSmall2{
+	font-size: $Small2;
+}
+
+.txtMed{
+	font-size: $Med;
+}
+
+.txtMed2{
+	font-size: $Med2;
+}
+
+.txtBig{
+	font-size: $Big;
+}
+
+.txtCenter{
+	text-align: $txtCenter;
+}
+
+.txtLeft{
+	text-align: $txtLeft;
+}
+
+.txtRight{
+	text-align: $txtRight;
+}
+
+.txtWhite{
+	color: $txtWhite;
+}
+
+.txtBlack{
+	color: $txtBlack;
+}
+
+.bgBrown{
+	background-color: $bgBrown;
+}
+
+.bgWhite{
+	background-color: $bgWhite;
+}
+
+.bgBlack{
+	background-color: $bgBlack;
+}
+.bgNormal{
+	background: $bgNormal !important ;
+}
+
+.fontSpecial{
+	font-family: $fontSpecial;
+	color: $txtBlack;
+}
+
+.border{
+	border: $border;
+}
+
+.spBorder{
+	border: $spBorder;
+}
+.noneBorder{
+	border: $noneBorder;
+}
+
+
+@keyframes txtAlpha{
+	from{opacity: 0;}	
+	to{opacity: 1;}
+}
+#nav__sticky{
+	border: none;
+	position: sticky;
+	top: 0px;
+	display: flex;
+	justify-content: space-around;
+	align-items: $txtCenter;
+	z-index: 2;
+	width: auto;
+}
+.margin{
+	margin: 2% 0;
+}
+
+.scale:hover{
+	transform: scale(1.03);
+	transition: scale 3s;
+}
+.scale2:hover{
+	transform: scale(1.08);
+	transition: scale 3s;
+}
+.width2{
+	width: 90%;
+}
+.form__width{
+	width: 20%;
+	font-size: 2rem;
+}
+
+.div__header{
+	background-color: black;
+	padding: 0.5% 0 0.1% 0;
+	color: $txtWhite;
+}
+	.div__header p{
+		color: $txtWhite;
+		text-align: $txtCenter;
+		font-size: $Small;
+	}
+
+.header__z-index{
+	z-index: 1;
+}

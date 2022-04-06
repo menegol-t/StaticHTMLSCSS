@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Yeseva+One&display=swap");
+html {
+  font-size: 62.5%; }
+  html * {
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none !important;
+    color: black;
+    margin: 0;
+    padding: 0; }
+  html body {
+    background: #020024;
+    background: linear-gradient(0deg, #020024 0%, #b8d7ff 0%, #9af6ff 100%);
+    font-size: 2rem; }
+    html body nav a h1 {
+      color: black;
+      font-weight: 500;
+      font-size: 6rem;
+      display: inline-block;
+      width: auto;
+      line-height: 1.2;
+      animation-name: txtAlpha;
+      animation-duration: 2.5s; }
+    html body nav div div ul {
+      list-style-type: none;
+      width: auto;
+      white-space: nowrap;
+      animation-name: txtAlpha;
+      animation-duration: 2s; }
+      html body nav div div ul nav div div ul li a {
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s; }
+    html body .nav-link:hover {
+      color: white !important;
+      background-size: 100% 2px; }
+    html body nav div div form {
+      display: inline-block;
+      vertical-align: middle;
+      animation-name: txtAlpha;
+      animation-duration: 2s; }
+    html body main {
+      margin: 1% 1.5%; }
+      html body main section article ul {
+        list-style-type: square; }
+        html body main section article ul section article ul span {
+          position: relative;
+          left: -6px; }
+
+.txtSmall {
+  font-size: 1.5rem; }
+
+.txtSmall2 {
+  font-size: 2rem; }
+
+.txtMed {
+  font-size: 2.5rem; }
+
+.txtMed2 {
+  font-size: 4rem; }
+
+.txtBig {
+  font-size: 5rem; }
+
+.txtCenter {
+  text-align: center; }
+
+.txtLeft {
+  text-align: left; }
+
+.txtRight {
+  text-align: right; }
+
+.txtWhite {
+  color: white; }
+
+.txtBlack {
+  color: black; }
+
+.bgBrown {
+  background-color: #E0A367; }
+
+.bgWhite {
+  background-color: white; }
+
+.bgBlack {
+  background-color: black; }
+
+.bgNormal {
+  background: transparent !important; }
+
+.fontSpecial {
+  font-family: "Yeseva One", sans-serif;
+  color: black; }
+
+.border {
+  border: 2px block solid; }
+
+.spBorder {
+  border: 2px dashed #E0A367; }
+
+.noneBorder {
+  border: none; }
+
+@keyframes txtAlpha {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+#nav__sticky {
+  border: none;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+  width: auto; }
+
+.margin {
+  margin: 2% 0; }
+
+.scale:hover {
+  transform: scale(1.03);
+  transition: scale 3s; }
+
+.scale2:hover {
+  transform: scale(1.08);
+  transition: scale 3s; }
+
+.width2 {
+  width: 90%; }
+
+.form__width {
+  width: 20%;
+  font-size: 2rem; }
+
+.div__header {
+  background-color: black;
+  padding: 0.5% 0 0.1% 0;
+  color: white; }
+
+.div__header p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem; }
+
+.header__z-index {
+  z-index: 1; }
+
+.h1__size {
+  font-size: 4rem;
+  margin-top: 3%; }
+
+.article__h2--format {
+  margin: 1% 5%; }
+
+#firstQuestion {
+  margin-top: 4%; }
+
+.article__p--format {
+  margin: 0 7% 3% 7%;
+  text-align: justify;
+  color: black; }
+
+#lastQuestion {
+  margin-bottom: 5%; }
+
+footer {
+  margin-top: 2%;
+  border-right: none;
+  border-left: none;
+  background-color: grey;
+  padding: 2%;
+  width: 100%;
+  display: flex;
+  font-size: 2rem; }
+  footer footer div ul {
+    list-style-type: none;
+    padding-left: 1%; }
+  footer footer ul li {
+    color: white; }
+  footer footer h4 {
+    margin-top: 3%; }
+
+@media (max-width: 768px) {
+  footer {
+    margin-top: 5%;
+    width: auto;
+    display: block; }
+  footer div div ul li {
+    font-size: 2rem;
+    font-weight: 400; }
+  footer div {
+    font-size: 1.7rem; }
+  .div__map--width {
+    margin: 0 auto 3% auto;
+    width: 200%; } }
+
+.div__map--width {
+  width: 100%; }
+
+.footer__div--margin {
+  display: inline-block;
+  margin-left: 3%;
+  justify-content: flex-start; }
+
+.footer__divdiv--inlineblock {
+  display: inline-block;
+  justify-self: flex-start; }
+
+.footer__ul--margin {
+  margin-top: 3%; }
+
+.footer__newsletter {
+  color: black;
+  font-size: 2.5rem; }
+
+.footer__newsletter:hover {
+  color: white; }
+
+.footer__a--width {
+  width: 15%; }
+
+.footer__img--width {
+  width: 29.5%; }
+
+.footer__img--margin {
+  margin: 3%;
+  width: 15%; }
