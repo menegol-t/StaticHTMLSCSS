@@ -4,11 +4,10 @@ footer{
 	margin-top: 2%;
 	border-right: none;
 	border-left: none;
-	background-color: $bgGrey;
+	background-color: map-get($map:$bg,$key:'cinco');
 	padding: 2%;
-	width: 100%;
-	display: flex;
 	font-size: $Small2;
+	@include caja(flex,100%);
 	footer div ul{
 		list-style-type: none;
 		padding-left:  1%;
@@ -24,8 +23,7 @@ footer{
 @media (max-width: 768px){
 	footer{
 		margin-top: 5%;
-		width: auto;
-		display: block;
+		@include caja(block,auto);
 	}
 	footer div div ul li{
 		font-size: 2rem;
@@ -80,4 +78,5 @@ footer{
 .footer__img--margin{
 	margin: 3%;
 	width: 15%;
+	@extend .footer__ul--margin;
 }

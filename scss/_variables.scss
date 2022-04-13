@@ -18,13 +18,27 @@ $txtRight: right;
 $txtWhite: white;
 $txtBlack: black;
 
+$bg:(
+	'uno': #E0A367,
+	'dos': white,
+	'tres': black,
+	'cuatro': transparent,
+	'cinco': grey,
+	);   /*background-color: map-get($map:$bg,$key:'cinco'); */
+
 $bgBrown: #E0A367;
 $bgWhite: white;
 $bgBlack: black;
 $bgNormal: transparent;
 $bgGrey: grey;
 
+@mixin caja($display,$width){
+	display: $display;
+	width: $width;
+}  /* @include caja(block,auto);*/
+
 $border: 2px block solid; 
 $noneBorder:  none; 
 $spBorder:  2px dashed #E0A367;
+
 

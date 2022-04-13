@@ -100,18 +100,18 @@ html{
 }
 
 .bgBrown{
-	background-color: $bgBrown;
+	background-color: map-get($map:$bg,$key:'uno');
 }
 
 .bgWhite{
-	background-color: $bgWhite;
+	background-color: map-get($map:$bg,$key:'dos');
 }
 
 .bgBlack{
-	background-color: $bgBlack;
+	background-color: map-get($map:$bg,$key:'tres');
 }
 .bgNormal{
-	background: $bgNormal !important ;
+	background: map-get($map:$bg,$key:'cuatro') !important ;
 }
 
 .fontSpecial{
