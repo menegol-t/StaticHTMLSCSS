@@ -1,0 +1,35 @@
+/*BEM PRODUCTOS*/
+
+.section__anteojo--font{
+	font-weight: 500;
+	text-align: $txtCenter;
+	margin: 3% 1%;
+}
+
+.section__divAnteojos--margin{
+	margin: 0% auto;
+}
+.section__modelosDimensiones--font{
+	font-weight: 300;
+	margin-left: 40%;
+	margin-right: 5%;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: $txtCenter;
+}
+
+.section__ul--format{
+	list-style-type: square;
+	display: inline-block;
+	text-align: $txtCenter;
+	margin: 2%;
+	vertical-align: middle;
+}
+
+section article figure{
+	margin: 4%;
+	@include caja(inline-block,40%);
+}
+	section article figure img{
+		width: 100%;
+	}

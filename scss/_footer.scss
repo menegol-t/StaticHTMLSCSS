@@ -1,4 +1,4 @@
-//footer//
+/* footer */
 
 footer{
 	margin-top: 2%;
@@ -8,11 +8,11 @@ footer{
 	padding: 2%;
 	font-size: $Small2;
 	@include caja(flex,100%);
-	footer div ul{
+	div ul{
 		list-style-type: none;
 		padding-left:  1%;
 	}
-		footer ul li{
+		ul li{
 			color: white;
 		}
 	footer h4{
@@ -56,6 +56,8 @@ footer{
 
 .footer__ul--margin{
 	margin-top: 3%;
+	color: $txtWhite;
+	font-size: $Small;
 }
 
 .footer__newsletter{
@@ -77,6 +79,6 @@ footer{
 
 .footer__img--margin{
 	margin: 3%;
-	width: 15%;
+	width: 27%;
 	@extend .footer__ul--margin;
 }

@@ -43,8 +43,8 @@ body{
 			background-size: 0% 2px;
 			transition: background-size .3s;
 		} 
-		.nav-link:hover{
-			color: white !important;
+		#override-boostrap .nav-link:hover{
+			color: white ;
 			background-size: 100% 2px;
 		}
 	nav div div form{
@@ -141,8 +141,8 @@ footer{
 .bgBlack{
 	background-color: black;
 }
-.bgNormal{
-	background: transparent !important ;
+#override-boostrap .bgNormal{
+	background: transparent;
 }
 
 .fontSpecial{
@@ -213,12 +213,8 @@ footer{
 /*grid responsive, empieza por index*/
 
 @media (max-width: 768px){
-	.contenedor{
-		grid-template-columns: 100%;
-		grid-template-rows: repeat(3, auto);
-		grid-template-areas: "nav"
-		"main"
-		"footer"
+	.div__header{
+		width: 100% ;
 	}
 	nav a h1{
 		font-size: 3rem;
@@ -254,18 +250,20 @@ footer{
 		width: 70%;
 		margin: 2% auto;
 	}
-	.div__VerMasProd{
-		width: 70%;
-		margin: 0 auto;
-		padding: 5% 0 0 0;
-
+	#override-boostrap .div__VerMasProd{
+		width: 70%  ;
+		margin: 2% auto 0 auto;
+		padding: 5% 2% 0 2% ;
+	}
+	.div__VerMasProd p{
+		font-size: 2rem;
 	}
 	#lente_derecho{
 		display: none;
 	}
 	footer{
 		margin-top: 5%;
-		width: auto;
+		width: 100%;
 		display: block;
 	}
 	footer div div ul li{
@@ -277,6 +275,12 @@ footer{
 	.div__map--width{
 		margin: 0 auto;
 		width: 200%;
+	}
+	#override-boostrap .footer__img--width{
+		width: 25% ; 
+	}
+	#override-boostrap .footer__img--margin{
+		width: 30% ;
 	}
 	/*productos*/
 	#disponibles{
@@ -291,12 +295,12 @@ footer{
 		font-size: 1.7rem;
 	}
 	/*novedades */
-	.article__newsletter--responsive{
-		font-size: 1.9rem !important;
+	#override-boostrap .article__newsletter--responsive{
+		font-size: 1.9rem;
 	}
-	.fieldset__--margin{
-		margin: 3% 10% !important;
-		width: 80% !important;
+	#override-boostrap .fieldset__--margin{
+		margin: 3% 10% ;
+		width: 80% ;
 		font-size: 1.7rem;
 	}
 	.article__vistazo{
@@ -317,45 +321,21 @@ footer{
 	/*FAQ*/
 }
 
-
-@media only screen and (min-width: 768px) {
-    .contenedor{
-		grid-template-columns: 100%;
-		grid-template-rows: repeat(3, auto);
-		grid-template-areas: "nav"
-		"main"
-		"footer"
-		
-	}
-}
-#cartel{
-	grid-area: cartel;
-}
-#nav{
-	grid-area: nav;
-}
-#main{
-	grid-area: main;
-}
-#articleEstuche{
-	grid-area: estuche;
-}
-#articleMasProd{
-	grid-area: article;
-}
-#pie{
-	grid-area: footer;
-}
-
 @media (min-width:768px) and (max-width: 940px){
 	.div__nosotros--marginFooter{
 		margin-bottom: 10%;
 	}
 }
 
-
+@media (max-width: 480px){
+	#override-boostrap .boton__responsive{
+		display: none  ;
+	}
+	.caption__margin-responsive{
+		margin-top: 5% ;
+	}
+}
 /*BEM DE INDEX*/
-
 
 
 .article__estuche{
@@ -414,7 +394,6 @@ footer{
 
 /*BEM PRODUCTOS*/
 
-
 .section__anteojo--font{
 	font-weight: 500;
 	text-align: center;
@@ -439,23 +418,6 @@ footer{
 	text-align: center;
 	margin: 2%;
 	vertical-align: middle;
-}
-
-.table--align{
-	margin: 0 auto;
-}
-
-table,th,td {
-  border: 1px solid black;
-}
-
-table th,table td {
-  padding: auto;
-}
-
-.table__ol--padding{
-	padding-left: 20%;
-	padding-right: 30px;
 }
 
 section article figure{
@@ -534,6 +496,10 @@ section article figure{
 	height: 90%;
 }
 
+#override-boostrap .img--height{
+	height: 70%;
+}
+
 .caption--marginTop{
 	margin-top: 3%;
 }
@@ -592,6 +558,7 @@ section article figure{
 
 .footer__img--width{
 	width: 29.5%;
+	border-radius: 30px;
 }
 
 .footer__img--margin{

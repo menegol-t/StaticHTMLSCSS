@@ -1,0 +1,146 @@
+/* responsive empieza por index */
+@media (max-width: 768px){
+	.div__header{
+		width: 100% ;
+	}
+	nav a h1{
+		font-size: 3rem;
+	}	
+	div nav form label{
+		display: none;
+	}
+	nav form input{
+		margin-bottom: 4%;
+	}
+	.input__lenght{
+		width: 20%;
+	}
+	.header__carrusel img{
+		width: 97%;
+	}
+	#articleEstuche{
+		margin: 4% 1%;
+	}
+	.article__estucheLista{
+		font-size: 1.3rem;
+	}
+	.article__estucheLista--padding{
+		padding-right: 0;
+	}
+	.article__productos{
+		flex-wrap: wrap;
+		align-content: center;
+	}
+	#lente_izquierdo{
+		margin: 2% auto;
+		@include caja(inline-block, 70%);
+	}
+	#override-boostrap .div__VerMasProd{
+		width: 70% ;
+		margin: 2% auto 0 auto;
+		padding: 5% 2% 0 2% ;
+	}
+	.div__VerMasProd p{
+		font-size: $Small2;
+	}
+	#lente_derecho{
+		display: none;
+	}
+	footer{
+		margin-top: 5%;
+		@include caja(block,auto);
+		div{
+			font-size:  1.7rem;
+			 div ul li{
+				font-size: $Small2;
+				font-weight: 400;
+			}
+		}
+	}
+	.div__map--width{
+		margin: 0 auto 3% auto;
+		width: 200%;
+	}
+	.footer__ul--margin{
+		font-size: $Small;
+	}
+	.div__map--width{
+		margin: 0 auto;
+		width: 200%;
+	}
+	#override-boostrap .footer__img--width{
+		width: 25% ; 
+	}
+	#override-boostrap .footer__img--margin{
+		width: 30% ;
+	}
+	/*productos*/
+	#disponibles{
+		font-size: $Small2;
+	}
+	#dimensiones__{
+		font-size: $Small2;
+		margin: 0 auto;
+	}
+	#dimensiones__ul{
+		margin-left: 2%;
+		font-size: 1.7rem;
+	}
+	/*novedades */
+	#override-boostrap .article__newsletter--responsive{
+		font-size: 1.9rem;
+	}
+	#override-boostrap .fieldset__--margin{
+		margin: 3% 10% ;
+		width: 80% ;
+		font-size: 1.7rem;
+	}
+	.article__vistazo{
+		font-size: 1.9rem;
+	}
+	.article__lentesNuevos{
+		flex-wrap: wrap;
+		align-content: center;
+		margin-top: 3%;
+	}
+	.figure__novedades{
+		display: inline-block;
+		width: 70%;
+		margin: 0 auto 2% auto;
+	}
+	/* nosotros*/
+	#head1{
+		font-size: $Med;
+	}
+	/*FAQ*/
+	.article__h2--format{
+		font-size: $Med;
+	}
+	.article__p--format{
+		font-size: $Small;
+	}
+}
+
+@media (min-width:768px) and (max-width: 940px){
+	.div__nosotros--marginFooter{
+		margin-bottom: 10%;
+	}
+}
+
+@media (max-width: 480px){
+	#override-boostrap .boton__responsive{
+		display: none  ;
+	}
+	.caption__margin-responsive{
+		margin-top: 5% ;
+	}
+}
+
+@media (max-width: 310px){
+	#taller{
+		margin-top: 10%;
+	}
+	#override-boostrap nav div a h1{
+		font-size: $Med2;
+	}	
+}

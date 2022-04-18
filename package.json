@@ -1,7 +1,7 @@
 {
-  "name": "idea-aubier-tomasmenegol",
+  "name": "Aubier",
   "version": "1.0.0",
-  "description": "WebAubier",
+  "description": "Web de Aubier, lentes de madera. Por Tomas Menegol",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/menegol-t/menegol-t.git"
   },
   "keywords": [
-    "aubier"
+    "aubier lentes de madera"
   ],
   "author": "TomasMenegol",
   "license": "ISC",

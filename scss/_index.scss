@@ -1,0 +1,50 @@
+/*BEM DE INDEX*/
+
+
+.article__estuche{
+	margin:  3% auto;
+	justify-content: space-between;
+	align-items: center;
+	@include caja(flex,85%);
+}
+.article__imgEstuche{ 
+	width: 80%;
+}
+.article__estucheLista{
+	display: inline-block;
+	padding-left: 7%;
+}
+.article__estucheLista--padding{
+	background-image: linear-gradient(currentColor, currentColor);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size .3s;
+	&:hover{
+		background-size: 100% 2px;
+	}
+}
+.article__productos{
+	margin: 0.5% auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+}	
+.article__lentes{
+	width: 35%;
+	img{
+		width: 100% ;
+	}
+}
+.div__VerMasProd{
+	background-color: map-get($map:$bg,$key:'uno');
+	padding:  0.75% 1% 0.25% 1%;
+	top: 0;
+	z-index: 1;
+	@include caja(inline-block,auto);
+}
+section article div a p:hover{
+	color: white;
+}
+

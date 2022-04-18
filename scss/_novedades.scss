@@ -1,0 +1,36 @@
+/* BEM NOVEDADES*/ 
+
+.article__newsletter--responsive{
+	font-size: $Big;
+}
+.fieldset__--margin{
+	margin: 3% 25%;
+	padding-top: 1%;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	@include caja(flex,50%);
+}
+	.fieldset__div--margin{
+		margin: 0 0 2% 2%;
+	}
+	.fieldset__input--padding{
+		padding: 1%;
+		width: 70%;
+	}
+	.fieldset__frecuencia--width{
+		width: 33%;
+	}
+	.fieldset__txtArea textarea{
+			width:  100%;
+		}
+	.fieldset__txtArea input{
+		width: 45%;
+		margin-bottom: 5%;
+	}
+.article__lentesNuevos{
+	display: flex;
+	justify-content: space-between;
+}

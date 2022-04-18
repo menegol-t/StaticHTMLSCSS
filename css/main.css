@@ -153,6 +153,257 @@ html {
 .header__z-index {
   z-index: 1; }
 
+/* responsive empieza por index */
+@media (max-width: 768px) {
+  .div__header {
+    width: 100%; }
+  nav a h1 {
+    font-size: 3rem; }
+  div nav form label {
+    display: none; }
+  nav form input {
+    margin-bottom: 4%; }
+  .input__lenght {
+    width: 20%; }
+  .header__carrusel img {
+    width: 97%; }
+  #articleEstuche {
+    margin: 4% 1%; }
+  .article__estucheLista {
+    font-size: 1.3rem; }
+  .article__estucheLista--padding {
+    padding-right: 0; }
+  .article__productos {
+    flex-wrap: wrap;
+    align-content: center; }
+  #lente_izquierdo {
+    margin: 2% auto;
+    display: inline-block;
+    width: 70%; }
+  #override-boostrap .div__VerMasProd {
+    width: 70%;
+    margin: 2% auto 0 auto;
+    padding: 5% 2% 0 2%; }
+  .div__VerMasProd p {
+    font-size: 2rem; }
+  #lente_derecho {
+    display: none; }
+  footer {
+    margin-top: 5%;
+    display: block;
+    width: auto; }
+    footer div {
+      font-size: 1.7rem; }
+      footer div div ul li {
+        font-size: 2rem;
+        font-weight: 400; }
+  .div__map--width {
+    margin: 0 auto 3% auto;
+    width: 200%; }
+  .footer__ul--margin, .footer__img--margin {
+    font-size: 1.5rem; }
+  .div__map--width {
+    margin: 0 auto;
+    width: 200%; }
+  #override-boostrap .footer__img--width {
+    width: 25%; }
+  #override-boostrap .footer__img--margin {
+    width: 30%; }
+  /*productos*/
+  #disponibles {
+    font-size: 2rem; }
+  #dimensiones__ {
+    font-size: 2rem;
+    margin: 0 auto; }
+  #dimensiones__ul {
+    margin-left: 2%;
+    font-size: 1.7rem; }
+  /*novedades */
+  #override-boostrap .article__newsletter--responsive {
+    font-size: 1.9rem; }
+  #override-boostrap .fieldset__--margin {
+    margin: 3% 10%;
+    width: 80%;
+    font-size: 1.7rem; }
+  .article__vistazo {
+    font-size: 1.9rem; }
+  .article__lentesNuevos {
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 3%; }
+  .figure__novedades {
+    display: inline-block;
+    width: 70%;
+    margin: 0 auto 2% auto; }
+  /* nosotros*/
+  #head1 {
+    font-size: 2.5rem; }
+  /*FAQ*/
+  .article__h2--format {
+    font-size: 2.5rem; }
+  .article__p--format {
+    font-size: 1.5rem; } }
+
+@media (min-width: 768px) and (max-width: 940px) {
+  .div__nosotros--marginFooter {
+    margin-bottom: 10%; } }
+
+@media (max-width: 480px) {
+  #override-boostrap .boton__responsive {
+    display: none; }
+  .caption__margin-responsive {
+    margin-top: 5%; } }
+
+@media (max-width: 310px) {
+  #taller {
+    margin-top: 10%; }
+  #override-boostrap nav div a h1 {
+    font-size: 4rem; } }
+
+/*BEM DE INDEX*/
+.article__estuche {
+  margin: 3% auto;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 85%; }
+
+.article__imgEstuche {
+  width: 80%; }
+
+.article__estucheLista {
+  display: inline-block;
+  padding-left: 7%; }
+
+.article__estucheLista--padding {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s; }
+  .article__estucheLista--padding:hover {
+    background-size: 100% 2px; }
+
+.article__productos {
+  margin: 0.5% auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0; }
+
+.article__lentes {
+  width: 35%; }
+  .article__lentes img {
+    width: 100%; }
+
+.div__VerMasProd {
+  background-color: #E0A367;
+  padding: 0.75% 1% 0.25% 1%;
+  top: 0;
+  z-index: 1;
+  display: inline-block;
+  width: auto; }
+
+section article div a p:hover {
+  color: white; }
+
+/*BEM PRODUCTOS*/
+.section__anteojo--font {
+  font-weight: 500;
+  text-align: center;
+  margin: 3% 1%; }
+
+.section__divAnteojos--margin {
+  margin: 0% auto; }
+
+.section__modelosDimensiones--font {
+  font-weight: 300;
+  margin-left: 40%;
+  margin-right: 5%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center; }
+
+.section__ul--format {
+  list-style-type: square;
+  display: inline-block;
+  text-align: center;
+  margin: 2%;
+  vertical-align: middle; }
+
+section article figure {
+  margin: 4%;
+  display: inline-block;
+  width: 40%; }
+
+section article figure img {
+  width: 100%; }
+
+/* BEM NOVEDADES*/
+.article__newsletter--responsive {
+  font-size: 5rem; }
+
+.fieldset__--margin {
+  margin: 3% 25%;
+  padding-top: 1%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  display: flex;
+  width: 50%; }
+
+.fieldset__div--margin {
+  margin: 0 0 2% 2%; }
+
+.fieldset__input--padding {
+  padding: 1%;
+  width: 70%; }
+
+.fieldset__frecuencia--width {
+  width: 33%; }
+
+.fieldset__txtArea textarea {
+  width: 100%; }
+
+.fieldset__txtArea input {
+  width: 45%;
+  margin-bottom: 5%; }
+
+.article__lentesNuevos {
+  display: flex;
+  justify-content: space-between; }
+
+/* BEM NOSOTROS */
+.header__h2--hoverWhite:hover {
+  color: white; }
+
+.header__h2--margin {
+  margin: 3% 0; }
+
+.article__h3 {
+  margin: 0 0 2% 5%; }
+
+.article__p {
+  margin: 0 15%;
+  text-align: justify;
+  line-height: 3rem; }
+
+.section--flex {
+  display: flex; }
+
+.figure__image--width {
+  width: 100%;
+  margin: 2% auto;
+  height: 90%; }
+
+#override-boostrap .img--height {
+  height: 70%; }
+
+.caption--marginTop {
+  margin-top: 3%; }
+
 .h1__size {
   font-size: 4rem;
   margin-top: 3%; }
@@ -171,6 +422,7 @@ html {
 #lastQuestion {
   margin-bottom: 5%; }
 
+/* footer */
 footer {
   margin-top: 2%;
   border-right: none;
@@ -180,10 +432,10 @@ footer {
   font-size: 2rem;
   display: flex;
   width: 100%; }
-  footer footer div ul {
+  footer div ul {
     list-style-type: none;
     padding-left: 1%; }
-  footer footer ul li {
+  footer ul li {
     color: white; }
   footer footer h4 {
     margin-top: 3%; }
@@ -215,7 +467,9 @@ footer {
   justify-self: flex-start; }
 
 .footer__ul--margin, .footer__img--margin {
-  margin-top: 3%; }
+  margin-top: 3%;
+  color: white;
+  font-size: 1.5rem; }
 
 .footer__newsletter {
   color: black;
@@ -232,4 +486,4 @@ footer {
 
 .footer__img--margin {
   margin: 3%;
-  width: 15%; }
+  width: 27%; }

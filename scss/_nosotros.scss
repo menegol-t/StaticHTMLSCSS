@@ -1,0 +1,37 @@
+/* BEM NOSOTROS */
+
+.header__h2--hoverWhite:hover{
+	color:  white;
+}
+
+.header__h2--margin{
+	margin: 3% 0;
+}
+
+.article__h3{
+	margin: 0 0 2% 5%;
+}
+
+.article__p{
+	margin: 0 15%;
+	text-align: justify;
+	line-height: 3rem;
+}
+
+.section--flex{
+	display: flex;
+}
+
+.figure__image--width{
+	width: 100%;
+	margin: 2% auto;
+	height: 90%;
+}
+
+#override-boostrap .img--height{
+	height: 70%;
+}
+
+.caption--marginTop{
+	margin-top: 3%;
+}

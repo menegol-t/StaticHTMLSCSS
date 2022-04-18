@@ -7,12 +7,12 @@
 	<meta name="description" content="Página sobre nosotros e información relacionada a Aubier.">
 	<meta name="keywords" content="nosotros aubier, quien es aubier, que es aubier, que hace aubier, grupo aubier, compañia aubier">
 	<link rel="icon" href="../img/chiquitos/favicon.png">
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="../css/animate.css">
 	<!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body>
+<body id="override-boostrap">
 	<!-- txt antes de menu-->
 	<div class="div__header" id="cartel">
 		<p class="txtCenter txtSmall txtWhite"> <span class="txtWhite ">Premium designer eyewear.</span></p>
@@ -56,7 +56,7 @@
 		<!-- link al newsletter y contacto--> 
 		<header>
 			<a href="novedades.html#contacto">
-				<h2 class="txtCenter fontSpecial header__h2--hoverWhite header__h2--margin txtBig animate__animated animate__fadeInLeft">Mantenete al tanto el newsletter!</h2>
+				<h2 id="head1" class="txtCenter fontSpecial header__h2--hoverWhite header__h2--margin txtBig animate__animated animate__fadeInLeft">Mantenete al tanto el newsletter!</h2>
 			</a>
 			<a href="#footer">
 				<h2 class="txtCenter txtMed header__h2--hoverWhite header__h2--margin fontSpecial animate__animated animate__fadeInLeft" >O, hablanos por telefono/mail cuando quieras</h2>
@@ -66,7 +66,7 @@
 			<!-- info de objetivos de la org -->
 			<article>
 				<h3 class="article__h3 txtMed fontSpecial"> Sobre nosotros...</h3>
-				<p class="article__p"> Somos una empresa de lentes creada por un lutier con una misión tan simple y compleja como hacer lentes originales de buena calidad, que al mismo tiempo sean sustentables y no sumen al conocido problema de la "fast-fashion". Por eso, nuestros lentes estan hechos de un material no solo recicable, si no que tambien renovable al ser extraidos de plantciones explicitamente previstas para crecer madera, sin contribuir a la deforestacion. Es por eso que presentamos el mayor cuidado a nuestros productos, como todos nuestros modelos son creados en nuestro taller con nuestros propios planos, somos capaces de presentar la mas alta calidad de eyewear posible.</p>
+				<p class="article__p article__p--format"> Somos una empresa de lentes creada por un lutier con una misión tan simple y compleja como hacer lentes originales de buena calidad, que al mismo tiempo sean sustentables y no sumen al conocido problema de la "fast-fashion". Por eso, nuestros lentes estan hechos de un material no solo recicable, si no que tambien renovable al ser extraidos de plantciones explicitamente previstas para crecer madera, sin contribuir a la deforestacion. Es por eso que presentamos el mayor cuidado a nuestros productos, como todos nuestros modelos son creados en nuestro taller con nuestros propios planos, somos capaces de presentar la mas alta calidad de eyewear posible.</p>
 			</article>
 		</section>
 		<section class="section--flex caption--marginTop">
@@ -78,20 +78,20 @@
 			    <!-- los botones no llevan a ningun lado -->
 			    	<article class="col-md-4">
 						<figure class="figure__image--width">
-							<img width="100%" height="80%" src="../img/nosotrospablo.png" alt="Foto del CEO de Aubier de costado, Pablo, trabajando en uno de sus proyectos de Luteria.">
+							<img width="100%" src="../img/nosotrospablo.png" alt="Foto del CEO de Aubier de costado, Pablo, trabajando en uno de sus proyectos de Luteria." class="img-thumbnail img--height">
 							<figcaption class="txtCenter caption--marginTop">
 							<h4 class="fontSpecial txtMed">Pablo</h4> CEO de Aubier, jefe del departamento de marketing y produccion.</figcaption>
 						</figure>
 					</article>
 					<article class="col-md-4">
 						<figure class="figure__image--width">
-							<img width="100%" height="80%" src="../img/nosotroscontrolplagas.jpg" alt="Imagen de Gala, Schnauzer Gigante, jefa del departamento de control de pestes.">
-							<figcaption class="txtCenter caption--marginTop mb-3"><h4 class="fontSpecial txtMed">Gala</h4>Jefa del departamento de control de pestes. Y aspiradora automática, si hay comida.</figcaption>
+							<img width="100%" src="../img/nosotroscontrolplagas.jpg" alt="Imagen de Gala, Schnauzer Gigante, jefa del departamento de control de pestes." class="img-thumbnail img--height">
+							<figcaption class="txtCenter caption--marginTop mb-3 caption__margin-responsive"><h4 class="fontSpecial txtMed">Gala</h4>Jefa del departamento de control de pestes. Y aspiradora automática, si hay comida.</figcaption>
 						</figure>
 					</article>
 					<article class="col-md-4">
-						<figure class="figure__image--width">
-							<img width="100%" height="80%" src="../img/nosotrosestudio.jpeg" alt="Foto del taller a donde se crean los lentes y otros proyectos personales.">
+						<figure id="taller" class="figure__image--width">
+							<img width="100%" src="../img/nosotrosestudio.jpeg" alt="Foto del taller a donde se crean los lentes y otros proyectos personales." class="img-thumbnail img--height">
 							<figcaption class="txtCenter caption--marginTop"><h4 class="fontSpecial txtMed">Nuestro Taller</h4></figcaption>
 						</figure>
 					</article>
