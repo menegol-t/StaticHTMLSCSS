@@ -14,11 +14,10 @@ html{
 }
 
 body{
-	background: rgb(2,0,36);
-	background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(184,215,255,1) 0%, rgba(154,246,255,1) 100%);
+	background: white
 	font-size: 2rem !important;
 }
-
+/*
 	nav a h1{
 		color: black;
 		font-weight: 500;
@@ -564,4 +563,16 @@ section article figure{
 .footer__img--margin{
 	margin: 3%;
 	width: 15%;
+}
+
+/* gatito error*/
+.gif{
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	flex-wrap: wrap;
+}
+
+.oops{
+	margin: 5% auto 5% auto;
 }
