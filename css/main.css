@@ -153,6 +153,9 @@ html {
 .header__z-index {
   z-index: 1; }
 
+#oops {
+  background-color: white !important; }
+
 /* responsive empieza por index */
 @media (max-width: 768px) {
   .div__header {

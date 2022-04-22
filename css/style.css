@@ -318,6 +318,15 @@ footer{
 	/* nosotros*/
 
 	/*FAQ*/
+	.oops h1{
+		font-size: 2rem;
+	}
+	.gif img{
+		width: 75%;
+	}
+	.oops h2{
+		font-size: 2rem;
+	}
 }
 
 @media (min-width:768px) and (max-width: 940px){
