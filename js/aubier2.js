@@ -1,13 +1,8 @@
 //Pedir datos al usuario, si es menor de 14 no puede utilizar tarjeta de debito en Arg.
 
-
-let nombre = prompt("Ingrese su nombre")
-
-//IMPORTANTE!!!! No se porque, pero si pongo solo las 3 variables nombre apellido y edad, la pagina web no registra el prompt apellido y se lo salta. Para eso puse una tercera variable llamada "prueba" que no hace nada. Simplemente es la variable que mi web ignora para que si salga el campo apellido, y no si porque. Te invito a remover esta variable y ver si a vos te funciona descargandote el archivo JS. 
-
-let prueba = prompt("ingresa algo")
-let apellido = prompt("Ingrese su apellido")
 let edad = parseInt(prompt("Ingrese su edad"))
+let nombre = prompt("Ingrese su nombre")
+let apellido = prompt("Ingrese su apellido")
 
 while(nombre == "" || nombre == "null" || apellido == "" || apellido == "null" || edad  == "" || edad == "null"){
     alert("Por favor, completa todos tus datos.")
