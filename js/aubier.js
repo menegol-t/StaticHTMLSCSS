@@ -4,6 +4,7 @@ let nombre = prompt("Ingrese su nombre")
 let apellido = prompt("Ingrese su apellido")
 let edad = parseInt(prompt("Ingrese su edad"))
 
+
 while(nombre == "" || nombre == "null" || apellido == "" || apellido == "null" || edad  == "" || edad == "null"){
     alert("Por favor, completa todos tus datos.")
     nombre = prompt("Ingrese su nombre")
