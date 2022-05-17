@@ -1,9 +1,8 @@
 //Pedir datos al usuario, si es menor de 14 no puede utilizar tarjeta de debito en Arg.
 
+let edad = parseInt(prompt("Ingrese su edad"))
 let nombre = prompt("Ingrese su nombre")
 let apellido = prompt("Ingrese su apellido")
-let edad = parseInt(prompt("Ingrese su edad"))
-
 
 while(nombre == "" || nombre == "null" || apellido == "" || apellido == "null" || edad  == "" || edad == "null"){
     alert("Por favor, completa todos tus datos.")
