@@ -32,13 +32,10 @@ if(edad < 14){
 
 //Recorrer nuestros productos
 
-let mensajeEleccion = confirm("¿Quieres ver todos nuestros modelos y sus caracteristicas?")
+alert("Mira todos nuestros modelos y sus caracteristicas!")
 
-if(mensajeEleccion){
-    //alert(arrayLentes[0]+ "\n" + arrayLentes[1]+ arrayLentes[2]+ "\n"+ arrayLentes[3])
-    for (const x of arrayLentes){
+for (const x of arrayLentes){
     alert(" Modelo: "+ x.Modelo +"."+ "\n Color: "+ x.Color +"."+ "\n Precio (pre-impuestos): $" + x.Precio +"."+ "\n Color del vidrio: "+ x.Lente +".")
-    }
 }
 
 //Avisar de falta de stock
@@ -89,9 +86,14 @@ function adivinanza(ingresoDelUsuario){
 
 //Que modelo de lente quiere y en base a esto cual es el precio con impuesto y descuento por primera compra.
 
-let inputModelo = prompt("¿Qué modelo de lentes quieres?").toLowerCase();
+let imputModelo = prompt("¿Qué modelo de lentes quieres?").toLowerCase();
 
-let modelo = inputModelo
+let modelo = imputModelo.trim();
+
+while(modelo != "nantes" && modelo != "dijon" && modelo != "lyon" && modelo != "le mans"){
+    alert("Por favor ingrese un modelo valido.")
+    modelo = prompt("¿Qué modelo de lentes quieres?").toLowerCase();
+}
 
 switch(modelo){
     case "dijon":
