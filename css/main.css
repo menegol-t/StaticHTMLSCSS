@@ -133,6 +133,9 @@ html {
   transform: scale(1.08);
   transition: scale 3s; }
 
+.width3 {
+  width: 110%; }
+
 .width2 {
   width: 90%; }
 

@@ -5,6 +5,20 @@ const arrayLentes = [{Modelo: "Dijon", Color: "Rojo con rayas negras", Stock: 5,
 {Modelo: "Lyon", Color:"Madera clara", Stock: 12 , Precio: 7200, Lente: "Degrade dorado"},
 {Modelo: "Nantes", Color: "Madera oscura", Stock: 0, Precio: 7500, Lente:"Degrade dorado" ,},]
 
+//constructora por si necesito nuevos lentes
+
+class lentesnuevos{
+    constructor (modelo, color, stock, precio, lente){
+        this.Modelo = modelo;
+        this.Color = color;
+        this.Stock = stock;
+        this.Precio = precio;
+        this.Lente = lente;
+    }
+}
+
+//arrayLentes.push(new lentesnuevos("", "", , "", ""))
+
 //Pedir datos al usuario, si es menor de 14 no puede utilizar tarjeta de debito en Arg.
 
 let nombre = prompt("Ingrese su nombre") 
@@ -86,9 +100,7 @@ function adivinanza(ingresoDelUsuario){
 
 //Que modelo de lente quiere y en base a esto cual es el precio con impuesto y descuento por primera compra.
 
-let imputModelo = prompt("¿Qué modelo de lentes quieres?").toLowerCase();
-
-let modelo = imputModelo.trim();
+let modelo = prompt("¿Qué modelo de lentes quieres?").toLowerCase().trim()
 
 while(modelo != "nantes" && modelo != "dijon" && modelo != "lyon" && modelo != "le mans"){
     alert("Por favor ingrese un modelo valido.")
@@ -148,3 +160,27 @@ if(codigo != "88AUBIER88"){
     alert("Genial! El precio final, con IVA y descuento es: "+"$"+precioFinalDescuento)
 }
 
+//Pagina de productos DOM y eventos
+
+let dijonbtn = document.getElementById("dijonbtn")
+let lemansbtn = document.getElementById("lemansbtn")
+let lyonbtn = document.getElementById("lyonbtn")
+let nantesbtn = document.getElementById("nantesbtn")
+
+dijonbtn.addEventListener("click", function clickeado(){
+    dijonbtn.textContent = "Añadido al carrito!"
+    dijonbtn.className = "txtMed noneBorder fontSpecial"
+})
+
+lemansbtn.addEventListener("click", function clickeado(){
+    lemansbtn.textContent = "Añadido al carrito!"
+    lemansbtn.className = "txtMed noneBorder fontSpecial"
+})
+lyonbtn.addEventListener("click", function clickeado(){
+    lyonbtn.textContent = "Añadido al carrito!"
+    lyonbtn.className = "txtMed noneBorder fontSpecial"
+})
+nantesbtn.addEventListener("click", function clickeado(){
+    nantesbtn.textContent = "Añadido al carrito!"
+    nantesbtn.className = "txtMed noneBorder fontSpecial"
+})
