@@ -56,41 +56,26 @@
 			<!--newsletter -->
 			<section>
 				<article>
-					<h1 class="txtCenter txtMed2 fontSpecial article__newsletter--responsive animate__animated animate__fadeInLeft">Mantente al tanto con el newsletter!</h1>
-					<form  id="contacto">
+					<h1 id= "titulo"class="txtCenter txtMed2 fontSpecial article__newsletter--responsive animate__animated animate__fadeInLeft">Mantente al tanto con el newsletter!</h1>
 						<fieldset class="fieldset__--margin spBorder">
-							<legend class="txtCenter">Tus Datos</legend>
-							<div class="fieldset__div--margin">
-								<label for="nombre" >Nombre y apellido</label>
+							<legend class="txtCenter txtMed">Tus Datos</legend>
+							<div class="fieldset__div--margin txtCenter">
+								<label for="nombre" >Nombre</label>
 								<br>
-								<input class="fieldset__input--padding"type="text" placeholder="Enrique Ramirez" name="nombre" id="nombre">
+								<input class="fieldset__input--padding" type="text" placeholder="Enrique" name="nombre" id="nombre">
 							</div>
-							<div class="fieldset__div--margin">
+							<div class="fieldset__div--margin txtCenter">
+								<label for="nombre" >Apellido</label>
+								<br>
+								<input class="fieldset__input--padding" type="text" placeholder="Ramirez" name="apellido" id="apellido">
+							</div>
+							<div class="fieldset__div--margin txtCenter">
 								<label for="email">E-mail</label>
 								<br>
-								<input class="fieldset__input--padding"type="email" name="email" placeholder="enrique.ramirez@gmail.com" id="email">
+								<input class="fieldset__input--padding" type="email" name="email" placeholder="enrique.ramirez@gmail.com" id="email">
 							</div>
-							<div class="fieldset__div--margin">
-								<label>Que tipo de notificaciones desearia?</label>
-									<select class="fieldset__frecuencia--margin" name="frecuencia" id="frecuencia">
-										<option value="nuevos">Solo Nuevos Porductos</option>
-										<option value="promociones">Solo Promociones</option>
-										<option value="ambos">Ambos</option>
-									</select>
-							</div>
-							<div class="fieldset__div--margin">
-								<label for="prioridad">Deseo que el newsletter se envie como prioridad. 
-								</label>
-								<input type="checkbox" name="prioridad" id="prioridad" value="prioridad">
-							</div>
-							<div class="fieldset__txtArea">
-								<textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deja tu mensaje..."></textarea>
-							<br>
-								<input type="submit" value="Enviar">
-								<input type="reset" value="Eliminar">
-							</div>
+							<button id="botonEnviar"  class="fieldset__txtArea "> Enviar </button>
 						</fieldset>
-					</form>
 				</article>
 			</section>
 			<section>
@@ -113,7 +98,7 @@
 		<footer>
 		<!-- mapita -->
 			<div class="div__map--width">
-				<iframe class="footer__maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.8978569292613!2d-58.673588060694605!3d-34.55872742637743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbc40e1119923%3A0x4ccb7573c6081f24!2sC.%20Tucum%C3%A1n%20370%2C%20Bella%20Vista%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1645826674923!5m2!1ses-419!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				<iframe class="footer__maps" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 			</div>
 			<!-- info de la empresa -->
 			<div class="footer__div--margin">
@@ -152,8 +137,8 @@
 			</div>
 		</footer>
 	<!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-	<script href="../js/aubier3.js"></script>
+    
+	<script src="../js/aubier4.js"></script>
 	</div>
 </body>
 </html>
