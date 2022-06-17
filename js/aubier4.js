@@ -15,6 +15,7 @@ botonEnviar.addEventListener("click", function bienvenida(){
             "",
             "info"
         )
+        
     }else{
         let verificarCampos = verificarDatos(nombre, apellido, email)
         if (verificarCampos){
@@ -75,7 +76,7 @@ function registrarDatos(nombre, apellido, email){
         let guardados = JSON.parse(localStorage.getItem("arrayDatosGuardados"))
         guardados.push(usuarioNuevo)
 
-        let guardados_string = JSON.stringify("guardados")
+        let guardados_string = JSON.stringify(guardados)
         localStorage.setItem("arrayDatosGuardados", guardados_string)
     }else{
         let guardados = new Array()
