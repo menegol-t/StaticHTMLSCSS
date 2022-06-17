@@ -10,14 +10,27 @@ botonEnviar.addEventListener("click", function bienvenida(){
     let registroPrevio = yaEstaRegistrado(email) 
     
     if (registroPrevio){
-        titulo.innerText = mensaje
+        Swal.fire(
+            "Ya te habias registrado, " + mensaje,
+            "",
+            "info"
+        )
     }else{
         let verificarCampos = verificarDatos(nombre, apellido, email)
         if (verificarCampos){
             registrarDatos(nombre, apellido, email)
-            titulo.innerText = "Hemos registrado tus datos con exito!"
+            Swal.fire({
+                icon: 'success',
+                title: 'Datos resgistrados!',
+                showConfirmButton: false,
+                timer: 1500
+              })
         }else{
-            titulo.innerText = "Por favor, completa todos tus datos."
+            Swal.fire(
+                "Asegurate de completar todos tus datos.",
+                "",
+                "error"
+            )
         }
     }
 })
@@ -38,7 +51,7 @@ function yaEstaRegistrado(inputMail){
         emailsGuardados.forEach(element => {
             if(element.email == inputMail){
                 encontrado = true
-                mensaje = "Ya teniamos registrados tus datos, " + element.nombre
+                mensaje = element.nombre
             }
         });
     }

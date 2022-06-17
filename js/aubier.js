@@ -162,25 +162,3 @@ if(codigo != "88AUBIER88"){
 
 //Pagina de productos DOM y eventos
 
-let dijonbtn = document.getElementById("dijonbtn")
-let lemansbtn = document.getElementById("lemansbtn")
-let lyonbtn = document.getElementById("lyonbtn")
-let nantesbtn = document.getElementById("nantesbtn")
-
-dijonbtn.addEventListener("click", function clickeado(){
-    dijonbtn.textContent = "Añadido al carrito!"
-    dijonbtn.className = "txtMed noneBorder fontSpecial"
-})
-
-lemansbtn.addEventListener("click", function clickeado(){
-    lemansbtn.textContent = "Añadido al carrito!"
-    lemansbtn.className = "txtMed noneBorder fontSpecial"
-})
-lyonbtn.addEventListener("click", function clickeado(){
-    lyonbtn.textContent = "Añadido al carrito!"
-    lyonbtn.className = "txtMed noneBorder fontSpecial"
-})
-nantesbtn.addEventListener("click", function clickeado(){
-    nantesbtn.textContent = "Añadido al carrito!"
-    nantesbtn.className = "txtMed noneBorder fontSpecial"
-})
