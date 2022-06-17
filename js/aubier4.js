@@ -6,16 +6,15 @@ botonEnviar.addEventListener("click", function bienvenida(){
     let nombre = document.getElementById("nombre").value
     let apellido = document.getElementById("apellido").value
     let email = document.getElementById("email").value
-    
+
     let registroPrevio = yaEstaRegistrado(email) 
-    
+
     if (registroPrevio){
         Swal.fire(
             "Ya te habias registrado, " + mensaje,
             "",
             "info"
         )
-        
     }else{
         let verificarCampos = verificarDatos(nombre, apellido, email)
         if (verificarCampos){
