@@ -2,13 +2,12 @@
 
 const divProductos = document.getElementById("divProductos")
 
-fetch("./productos.json")
+fetch("../js/productos.json")
     .then( (anteojos) => anteojos.json() )
     .then((lentes) => {
 
     lentes.forEach((anteojo) => {
-        const div = document.createElement("div")
-        div.innerHTML = `
+        divProductos.innerHTML =  `
         <article class="col-md-6">
             <figure class="width2" id="${anteojo.figure}">
                 <img src="${anteojo.src}" alt="${anteojo.alt}" class="scale2 img-fluid">
@@ -21,7 +20,7 @@ fetch("./productos.json")
             </figure>
         </article>
         `
-        divProductos.append(div)
+        
     }
 )})
 
