@@ -1,4 +1,7 @@
-let formBusqueda = document.getElementById("formBusqueda")
+
+//EL SIGUIENTE CODIGO NO SE CORRIGE ES SOLO DE PRACTICA.
+
+/* let formBusqueda = document.getElementById("formBusqueda")
 let inputBusqueda = document.getElementById("inputBusqueda")
 let inputBoton = document.getElementById("inputBoton")
 
@@ -57,4 +60,4 @@ input.addEventListener("keypress", (e)=> {
     }
 )
 
-
+*/

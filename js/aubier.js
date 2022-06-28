@@ -1,5 +1,7 @@
-// Declaro mis lentes en venta como array, objetos, etc. 
+//EL SIGUIENTE CODIGO NO SE CORRIGE ES SOLO DE PRACTICA
 
+// Declaro mis lentes en venta como array, objetos, etc. 
+/*
 const arrayLentes = [{Modelo: "Dijon", Color: "Rojo con rayas negras", Stock: 5, Precio: 7500, Lente: "Tinte negro",},
 {Modelo: "Le mans", Color: "Madera oscura", Stock: 14 , Precio: 7600, Lente:"Degrade dorado"},
 {Modelo: "Lyon", Color:"Madera clara", Stock: 12 , Precio: 7200, Lente: "Degrade dorado"},
@@ -22,7 +24,7 @@ class lentesnuevos{
 //Pedir datos al usuario, si es menor de 14 no puede utilizar tarjeta de debito en Arg.
 
 let nombre = prompt("Ingrese su nombre") 
-let prueba = prompt("ingresa algo") //IMPORTANTE!!!! No se porque, pero si pongo solo las 3 variables nombre apellido y edad, la pagina web no registra el prompt apellido y se lo salta. Para eso puse una tercera variable llamada "prueba" que no hace nada. Simplemente es la variable que mi web ignora para que si salga el campo apellido, y no si porque. Te invito a remover esta variable y ver si a vos te funciona descargandote el archivo JS.
+let prueba = prompt("ingresa algo") 
 let apellido = prompt("Ingrese su apellido")
 let edad = prompt("Ingrese su edad")
 
@@ -162,3 +164,4 @@ if(codigo != "88AUBIER88"){
 
 //Pagina de productos DOM y eventos
 
+*/
