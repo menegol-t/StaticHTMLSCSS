@@ -1,4 +1,4 @@
-//COMIENZA CARDS DE PRODUCTOS DINAMICO
+//COMIENZA CARDS DE PRODUCTOS DINAMICO 
 const divProductos = document.getElementById("divProductos")
 
 fetch("../js/productos.json")
