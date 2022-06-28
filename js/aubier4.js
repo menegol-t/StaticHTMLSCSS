@@ -22,29 +22,20 @@ fetch("../js/productos.json")
         
         `
         divProductos.append(article)
-    }
-)})
 
-//COMIENZA TOAST DE BOTON DE COMPRA
-
-setTimeout(esperarBotones(), 0.5)
-
-function esperarBotones(){
-    let dijonbtn =  document.getElementById("dijonbtn");
-    let lemansbtn = document.getElementById("lemansbtn");
-    let lyonbtn = document.getElementById("lyonbtn");
-    let nantesbtn = document.getElementById("nantesbtn");
+    })
+    let dijonbtn =  document.getElementById("dijonbtn")
+    let lemansbtn = document.getElementById("lemansbtn")
+    let lyonbtn = document.getElementById("lyonbtn")
+    let nantesbtn = document.getElementById("nantesbtn") 
 
     dijonbtn.addEventListener("click", toast)
     lemansbtn.addEventListener("click", toast)
     lyonbtn.addEventListener("click", toast)
-    nantesbtn.addEventListener("click", toast)
-}
+    nantesbtn.addEventListener("click", toast) 
+})
 
-/* let dijonbtn =  document.getElementById("dijonbtn")
-let lemansbtn = document.getElementById("lemansbtn")
-let lyonbtn = document.getElementById("lyonbtn")
-let nantesbtn = document.getElementById("nantesbtn") */
+//COMIENZA TOAST DE BOTON DE COMPRA
 
 function toast(){
     Toastify({
@@ -57,10 +48,15 @@ function toast(){
     }).showToast();
 }
 
-/* dijonbtn.addEventListener("click", toast)
+let dijonbtn =  document.getElementById("dijonbtn")
+let lemansbtn = document.getElementById("lemansbtn")
+let lyonbtn = document.getElementById("lyonbtn")
+let nantesbtn = document.getElementById("nantesbtn") 
+
+dijonbtn.addEventListener("click", toast)
 lemansbtn.addEventListener("click", toast)
 lyonbtn.addEventListener("click", toast)
-nantesbtn.addEventListener("click", toast) */
+nantesbtn.addEventListener("click", toast) 
 
 /*
 <article class="col-md-6">
