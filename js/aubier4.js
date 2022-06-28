@@ -23,7 +23,8 @@ fetch("../js/productos.json")
         `
         divProductos.append(article)
 
-    })
+    }) //Esto pone dinamicamente los productos en el html. 
+
     let dijonbtn =  document.getElementById("dijonbtn")
     let lemansbtn = document.getElementById("lemansbtn")
     let lyonbtn = document.getElementById("lyonbtn")
@@ -33,13 +34,14 @@ fetch("../js/productos.json")
     lemansbtn.addEventListener("click", toast)
     lyonbtn.addEventListener("click", toast)
     nantesbtn.addEventListener("click", toast) 
+
+    //Esto añade funcionalidad a los botones de los productos para llamar a un toast.
 })
 
 //COMIENZA TOAST DE BOTON DE COMPRA
-
 function toast(){
     Toastify({
-        text: "Añadido al carrito!",
+        text: "Te avisaremos cuando se habiliten las compras!",
         duration: 3000,
         gravity: "bottom",
         style: {
@@ -47,27 +49,3 @@ function toast(){
           }
     }).showToast();
 }
-
-let dijonbtn =  document.getElementById("dijonbtn")
-let lemansbtn = document.getElementById("lemansbtn")
-let lyonbtn = document.getElementById("lyonbtn")
-let nantesbtn = document.getElementById("nantesbtn") 
-
-dijonbtn.addEventListener("click", toast)
-lemansbtn.addEventListener("click", toast)
-lyonbtn.addEventListener("click", toast)
-nantesbtn.addEventListener("click", toast) 
-
-/*
-<article class="col-md-6">
-	<figure class="width2" id="figureDijon">
-		<img src="../img/dijon/dijon.jpg" alt="Anteojos de lente circular, madera rayada en rojo y negro." class="scale2 img-fluid">
-	    <figcaption class="txtCenter mt-3 fontSpecial txtMed">Dijon <br> $7.500,00</figcaption>
-		<div class="text-center bgNormal">
-			<div class="card-body noneBorder">
-				<button id="dijonbtn" type="button" class="comprarbtn btn btn-outline-light w-25 boton__responsive"> <span class="txtSmall2 " >Comprar</span></button>
-			</div>
-		</div>
-	</figure>
-</article>
-*/

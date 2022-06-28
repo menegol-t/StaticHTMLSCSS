@@ -35,18 +35,17 @@ botonEnviar.addEventListener("click", function bienvenida(){
     }
 })
 
-class Usuario{ //crea un objeto Usuario
+class Usuario{ 
     constructor (nombre, apellido, email){
         this.nombre = nombre
         this.apellido = apellido
         this.email = email
     }
-}
+}//crea un objeto Usuario
 
 function yaEstaRegistrado(inputMail){
     let emailsGuardados = JSON.parse(localStorage.getItem("arrayDatosGuardados"))
     let encontrado = false
-    let i
     if(emailsGuardados != null ){
         emailsGuardados.forEach( element => {
             if(element.email == inputMail){
