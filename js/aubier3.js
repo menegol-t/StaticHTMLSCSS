@@ -1,5 +1,5 @@
 
-//EL SIGUIENTE CODIGO NO SE CORRIGE ES SOLO DE PRACTICA.
+//EL SIGUIENTE CODIGO NO SE CORRIGE, ES PARTE DE UN PROYECTO DE BOTON DE BUSQUEDA SIN FINALIZAR.
 
 /* let formBusqueda = document.getElementById("formBusqueda")
 let inputBusqueda = document.getElementById("inputBusqueda")
