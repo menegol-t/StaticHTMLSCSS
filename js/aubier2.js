@@ -74,16 +74,36 @@ function registrarDatos(nombre, apellido, email){
         let guardados = JSON.parse(localStorage.getItem("arrayDatosGuardados"))
         guardados.push(usuarioNuevo)
 
-        let guardados_string = JSON.stringify(guardados)
-        localStorage.setItem("arrayDatosGuardados", guardados_string)
+        let guardadosString = JSON.stringify(guardados)
+        localStorage.setItem("arrayDatosGuardados", guardadosString)
     }else{
         let guardados = new Array()
         guardados.push(usuarioNuevo)
-        let guardados_string = JSON.stringify(guardados)
-        localStorage.setItem("arrayDatosGuardados", guardados_string)
+        let guardadosString = JSON.stringify(guardados)
+        localStorage.setItem("arrayDatosGuardados", guardadosString)
     }
 }/*Lineas: 
 73: Crea el nuevo usuario. 
 74: Verifica que ya se haya creado el array en LocalStorage. 
 75: Si ya estaba creado, pushea el usuario. 
 81: Si no estaba creado, lo crea y pushea el usuario.*/ 
+
+
+//COMIENZA CARDS DE COSAS NUEVAS DINAMICO
+const divCosasNuevas = document.getElementById("cosas__nuevas")
+
+fetch("../js/novedades.json")
+    .then( (anteojos) => anteojos.json() )
+    .then((lentes) => {
+
+    lentes.forEach((anteojo) => {
+        const figure = document.createElement("figure")
+        figure.className = "figure__novedades"
+        figure.innerHTML =  `
+            <img src="${anteojo.src}" alt="${anteojo.alt}" class="scale2 img-fluid">
+            <figcaption class="txtCenter fontSpecial pt-3 txtMed">${anteojo.nombre}</figcaption>
+        `
+        divCosasNuevas.append(figure)
+
+    })
+}) /*Unicamente hace dinamicas las fotos de los lentes por venir, al obtenerlas de un json */
