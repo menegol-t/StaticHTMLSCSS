@@ -1,4 +1,4 @@
-//EL SIGUIENTE CODIGO NO SE CORRIGE ES SOLO LA PRACTICA DE LO QUE FUI APRENDIENDO.
+//El siguiente codigo es solo lo que fui aprendiento durante la cursada. 
 
 // Declaro mis lentes en venta como array, objetos, etc. 
 /*

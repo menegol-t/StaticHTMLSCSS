@@ -1,5 +1,4 @@
-
-//BOTON DE BUSQUEDA (desde la ubicacion de pages) Como las paginas son relativas, arme otro para el index
+//BOTON DE BUSQUEDA (desde la ubicacion de index) Como las paginas son relativas, arme otro para las pages, porque si no el github pages no me lo toma. 
 
 let formBusqueda = document.getElementById("formBusqueda")
 let inputBoton = document.getElementById("inputBoton")
@@ -14,55 +13,55 @@ inputBoton.addEventListener("click", () => {
 
     switch(inputBusqueda.toLowerCase()){
     case "dijon":
-        window.location = "../pages/productos.html"
+        window.location = "./pages/productos.html"
     break;
 
     case "le mans":
-        window.location = "../pages/productos.html"
+        window.location = "./pages/productos.html"
     break;
 
     case "lyon":
-        window.location = "../pages/productos.html"
+        window.location = "./pages/productos.html"
     break;
 
     case "nantes":
-        window.location = "../pages/productos.html"
+        window.location = "./pages/productos.html"
     break;
 
     case "toulouse": 
-        window.location = "../pages/novedades.html"
+        window.location = "./pages/novedades.html"
     break;
 
     case "bourdeos":
-        window.location = "../pages/novedades.html"
+        window.location = "./pages/novedades.html"
     break;
 
     case "precio":
-        window.location = "../pages/novedades.html"
+        window.location = "./pages/novedades.html"
     break;
 
     case "lentes":
-        window.location = "../pages/novedades.html"
+        window.location = "./pages/novedades.html"
     break;
 
     case "modelos":
-        window.location = "../pages/novedades.html"
+        window.location = "./pages/novedades.html"
     break;
 
     case "garantia":
-        window.location = "../pages/faq.html#garantia"
+        window.location = "./pages/faq.html#garantia"
     break;
     
     case "madera":
-        window.location = "../pages/faq.html#head1"
+        window.location = "./pages/faq.html#head1"
     break;
 
     case "abedul":
-        window.location = "../pages/faq.html#head1"
+        window.location = "./pages/faq.html#head1"
     break;
 
     case "envios":
-        window.location = "../pages/faq.html#envios"
+        window.location = "./pages/faq.html#envios"
     break;
 
     default:
