@@ -1,4 +1,5 @@
-//BOTON DE BUSQUEDA (desde la ubicacion de index) Como las paginas son relativas, arme otro para las pages, porque si no el github pages no me lo toma. 
+/*BOTON DE BUSQUEDA (desde la ubicacion de index) 
+Como las paginas son relativas, arme otro de este codigo, pero para las demas paginas. */
 
 let formBusqueda = document.getElementById("formBusqueda")
 let inputBoton = document.getElementById("inputBoton")
@@ -72,3 +73,31 @@ inputBoton.addEventListener("click", () => {
 /*Un boton de busqueda con varias palabras de interes. Solo funciona cuando hace click para que 
 se aseguren de buscar algo sin saltarse letras, debido que es un buscador bastante rudimentario
 pero bueno hago lo que puedo con lo que tengo :) */
+
+//Metodos de envio dinamicos
+const divFormasEnvio = document.getElementById("formasDeEnvio")
+
+fetch("js/formasDeEnvio.json")
+    .then( (anteojos) => anteojos.json() )
+    .then((lentes) => {
+
+    lentes.forEach((anteojo) => {
+        divFormasEnvio.innerHTML +=  `
+            <img src="${anteojo.src}" alt="${anteojo.alt}" class="footer__img--margin">
+        `
+    })
+})
+
+//Metodos de pago dinamicos
+const divFormasPago = document.getElementById("formasDePago")
+
+fetch("js/formasDePago.json")
+    .then( (anteojos) => anteojos.json() )
+    .then((lentes) => {
+
+    lentes.forEach((anteojo) => {
+        divFormasPago.innerHTML +=  `
+            <img src="${anteojo.src}" alt="${anteojo.alt}" class="footer__img--margin">
+        `
+    })
+})
