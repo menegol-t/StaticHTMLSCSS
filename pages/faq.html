@@ -45,10 +45,10 @@
 	          <a class="nav-link active" href="faq.html">FAQ</a>
 	        </li>
 	      </ul>
-	      <form class="d-flex me-3 form__width">
-	        <input class="form-control me-2 input__lenght" type="search" placeholder="Sus lentes..." aria-label="Search">
-	        <button class="btn btn-outline-light btn-lg" type="submit"><span class="txtSmall">Búqueda</span></button>
-	      </form>
+	      <form id="formBusqueda" class="d-flex me-3 form__width">
+			<input id="inputBusqueda" class="me-2 txtSmall" type="text" placeholder="Haga click en busqeuda..." aria-label="Search"> 
+			<button id="inputBoton" class="btn btn-outline-light btn-lg" type="button"> <span class="txtSmall">Búqueda</span></button>
+		</form>
 	    </div>
 	  </div>
 	</nav>	
@@ -66,19 +66,19 @@
 					<h2 class="fontSpecial article__h2--format txtMed2">¿Cómo cuidar los anteojos de madera?</h2>
 					<p class="article__p--format">Los anteojos están impermeabilizados con una laca poliuretánica. Se pueden mojar y sumergir en el agua. Lavalos con agua y jabón blanco periódicamente. Secalos bien antes de guardarlos. No uses productos que contengan alcohol. Podés usar lustramuebles o aceite de coco para hidratarlos y darles brillo. Y, si se opacan, podés traerlos al taller y los laqueamos.</p>
 
-					<h2 class="fontSpecial article__h2--format txtMed2">¿Los cristales son polarizados?</h2>
+					<h2 class="fontSpecial article__h2--format txtMed2" id="garantia">¿Los cristales son polarizados?</h2>
 					<p class="article__p--format">Los cristales grises y sepia son TAC polarizados con filtro UV400. Los cristales espejados son CR39 UV400. En ambos casos, los cristales protegen el ojo un 100% de los efectos nocivos de los rayos UVB y UVA.</p>
 
-					<h2 class="fontSpecial article__h2--format txtMed2">¿Tienen garantía?</h2>
+					<h2 class="fontSpecial article__h2--format txtMed2" >¿Tienen garantía?</h2>
 					<p class="article__p--format">Sí, tienen 6 meses de garantía por cualquier defecto de fabricación. La garantía no incluye costos logísticos. Si bien la garantía no cubre daños ocasionados por el mal uso del producto, no dejes de contactarnos por cualquier problema que tengas con tus Palo Santo. Desde nuestro taller, vamos a brindarte una solución.</p>
 
 					<h2 class=" fontSpecial article__h2--format txtMed2">¿Cómo hacer una compra?</h2>
 					<p class="article__p--format">Es muy fácil, solo debés elegir el producto deseado, agregarlo al carrito e iniciar la compra. Deberás seleccionar una modalidad de envío, completar los datos de quién lo recibirá y elegir una forma de pago.</p>
 
-					<h2 class="fontSpecial article__h2--format txtMed2">¿Cúales son las formas de pago para realizar mi compra?</h2>
+					<h2 class="fontSpecial article__h2--format txtMed2" id="envios">¿Cúales son las formas de pago para realizar mi compra?</h2>
 					<p class="article__p--format">Podés pagar tu compra con todas las tarjetas de débito, crédito (¡hasta 12 cuotas sin interés con tarjetas de crédito emitidas por bancos!) o en efectivo (por Rapipago, Pago Fácil o Provincia Net). Todos los pagos se hacen a través de Mercado Pago. Es una plataforma 100% segura y confiable que protege la privacidad de tus datos personales y financieros ya que trabaja con los estándares de seguridad más altos de la industria. También podés pagar por transferencia o depósito bancario.</p>
 
-					<h2 class="fontSpecial article__h2--format txtMed2">¿Cómo se realizan los envíos?</h2>
+					<h2 class="fontSpecial article__h2--format txtMed2" >¿Cómo se realizan los envíos?</h2>
 					<p class="article__p--format">Los envíos se realizan a través de OCA y Correo Argentino. Tenés dos modalidades para elegir: envío a domicilio o envío a sucursal de cada uno de estos.
 					Si estás en CABA, podés elegir envío "express" por moto y recibir tu compra en 24/48 hs. También podés venir a retirar tu compra al local. Estamos en C. Tucuman 370, Bella Vista, Buenos Aires de lunes a viernes de 11:30 a 20:00 hs. Los pedidos se retiran a partir de 24 hs de confirmada la compra.</p>
 
@@ -136,5 +136,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+	<script src="../js/aubier3.js"></script>
 </body>
 </html>

@@ -1,63 +1,75 @@
 
-//EL SIGUIENTE CODIGO NO SE CORRIGE, ES PARTE DE UN PROYECTO DE BOTON DE BUSQUEDA SIN FINALIZAR.
+//BOTON DE BUSQUEDA (desde la ubicacion de index)
 
-/* let formBusqueda = document.getElementById("formBusqueda")
-let inputBusqueda = document.getElementById("inputBusqueda")
+let formBusqueda = document.getElementById("formBusqueda")
 let inputBoton = document.getElementById("inputBoton")
 
-inputBusqueda.addEventListener("keypress", (e) => {
-    if (e.key === 'Enter'){
-        switch(inputBusqueda.value.trim().toLowerCase()){
-            case "dijon":
-                location.href = "../pages/productos.html#figureDijon"
-            break;
-        
-            case "le mans":
-                location.href = "../pages/productos.html#figureLemans"
-            break;
-        
-            case "lyon":
-                location.href = "../pages/productos.html#figureLyon"
-            break;
-        
-            case "nantes":
-                location.href = "../pages/productos.html#figureNantes"
-            break;
-        
-            default: 
-            break;
-        }
-    }
+
+formBusqueda.addEventListener("submit", (e) => {
+    e.preventDefault()
 })
 
 inputBoton.addEventListener("click", () => {
-    switch(inputBusqueda.value.trim().toLowerCase()){
+    let inputBusqueda = document.getElementById("inputBusqueda").value
+
+    switch(inputBusqueda.toLowerCase()){
     case "dijon":
-        window.location.href = "../pages/productos.html#figureDijon"
+        window.location = "../pages/productos.html"
     break;
 
     case "le mans":
-        window.location.href = "../pages/productos.html#figureLemans"
+        window.location = "../pages/productos.html"
     break;
 
     case "lyon":
-        window.location.href = "../pages/productos.html#figureLyon"
+        window.location = "../pages/productos.html"
     break;
 
     case "nantes":
-        window.location.href = "../pages/productos.html#figureNantes"
+        window.location = "../pages/productos.html"
     break;
 
-    default: 
+    case "toulouse": 
+        window.location = "../pages/novedades.html"
+    break;
+
+    case "bourdeos":
+        window.location = "../pages/novedades.html"
+    break;
+
+    case "precio":
+        window.location = "../pages/novedades.html"
+    break;
+
+    case "lentes":
+        window.location = "../pages/novedades.html"
+    break;
+
+    case "modelos":
+        window.location = "../pages/novedades.html"
+    break;
+
+    case "garantia":
+        window.location = "../pages/faq.html#garantia"
+    break;
+    
+    case "madera":
+        window.location = "../pages/faq.html#head1"
+    break;
+
+    case "abedul":
+        window.location = "../pages/faq.html#head1"
+    break;
+
+    case "envios":
+        window.location = "../pages/faq.html#envios"
+    break;
+
+    default:
+
     break;
     }
 })
-
-input.addEventListener("keypress", (e)=> {
-       if (e.key === 'Enter'){
-            alert(input.value)
-        }
-    }
-)
-
-*/
+/*Un boton de busqueda con varias palabras de interes. Solo funciona cuando hace click para que 
+se aseguren de buscar algo sin saltarse letras, debido que es un buscador bastante rudimentario
+pero bueno hago lo que puedo con lo que tengo :) */
