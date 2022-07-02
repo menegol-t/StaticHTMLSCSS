@@ -6,17 +6,21 @@
 	<title>404</title>
 	<link rel="icon" href="../img/chiquitos/favicon.png">
 	<link rel="stylesheet" href="../css/style.css">
+	
 	<!-- no se le pone ni keywords ni nada porque no es lago que los usuarios deberian buscar -->
 </head>
 <body>
 	<div class="oops">
 		<h1 class="fontSpecial txtCenter txtBig oops">OOPS! ERROR 404 PAGE NOT FOUND</h1>
 			<br>
-		<a href="../index.html" class="gif">
-			<img src="../img/gatito_404.gif" alt="gif de un gatito durmiendo sobre un teclado de computadora">
+		<a href="../index.html" class="gif" id="errorGIF">
+			<div id="image"></div>
 		</a>
 			<br>
-		<h2 class="txtMed2 fontSpecial txtCenter oops">No te preocupes, clickea el gatito para volver a la pagina principal.</h2>
+		
+		<h2 class="txtMed2 fontSpecial txtCenter oops">No te preocupes, clickea el <a href="../index.html" >gatito</a> para volver a la pagina principal.</h2>
+			<!-- Este link en el h2 es nada mas por si no carga el GIF desde el JS -->
+		<script src="../js/aubier5.js"></script>
 	</div>
 </body>
 </html>

@@ -33,7 +33,13 @@ botonEnviar.addEventListener("click", function bienvenida(){
             )
         }
     }
-})
+}) 
+/*
+En un click, ejecuta bienvenida(). Si es verdad que hay un registro previo(linea 12), te avisa que ya
+te registraste y no hace nada mas. 
+Si esto es falso, verifica(linea 19) que hayas rellenado todos los inputs. Si verdaderamente los rellenaste, 
+registra tus datos(linea 21). Si no rellenaste los inputs, te avisa. 
+*/
 
 class Usuario{ 
     constructor (nombre, apellido, email){
@@ -55,9 +61,11 @@ function yaEstaRegistrado(inputMail){
         });
     }
     return encontrado
-}/*Chequea en mi localStorage del browser si algo ya existe. 
-Si lo hay, lo recorre y te dice si lo que pusiste ya estaba registrado de antes. 
-Si no lo estaba, tira false.*/
+}/*Chequea en mi localStorage del browser si algo ya existe, pero asume que no existe y deja false para toda la funcion
+hasta que se demuestre lo contrario (linea 54). 
+Si es verdad que hay un array, lo recorre (linea 56) y verifica que ese email se hubiera registrado antes (linea 57).
+Cuando encuentra que si se registro, devuelve verdadero para toda la funcion (linea 58). Si no, deja el false(linea 5) y ya.
+ */
 
 function verificarDatos(nombre, apellido, email){
     if (nombre == "" || apellido == "" || email == ""){
@@ -65,7 +73,7 @@ function verificarDatos(nombre, apellido, email){
     }else{
         return true
     }
-}/*Verifica si los campos estan vacios nada mas.*/
+}/*Verifica si los campos estan vacios nada mas. */
 
 function registrarDatos(nombre, apellido, email){
     let usuarioNuevo = new Usuario(nombre, apellido, email)
@@ -73,7 +81,6 @@ function registrarDatos(nombre, apellido, email){
     if (arrayGuardadosYaFueCreado){
         let guardados = JSON.parse(localStorage.getItem("arrayDatosGuardados"))
         guardados.push(usuarioNuevo)
-
         let guardadosString = JSON.stringify(guardados)
         localStorage.setItem("arrayDatosGuardados", guardadosString)
     }else{
@@ -82,11 +89,12 @@ function registrarDatos(nombre, apellido, email){
         let guardadosString = JSON.stringify(guardados)
         localStorage.setItem("arrayDatosGuardados", guardadosString)
     }
-}/*Lineas: 
-73: Crea el nuevo usuario. 
-74: Verifica que ya se haya creado el array en LocalStorage. 
-75: Si ya estaba creado, pushea el usuario. 
-81: Si no estaba creado, lo crea y pushea el usuario.*/ 
+}/*Registra los datos.
+Lineas: 
+79: Crea el nuevo usuario. 
+81: Verifica que ya se haya creado el array en LocalStorage. 
+83: Si el array ya estaba creado, pushea el usuario. 
+86: Si el array no estaba creado, lo crea y pushea el usuario.*/ 
 
 
 //COMIENZA CARDS DE COSAS NUEVAS DINAMICO
@@ -106,4 +114,4 @@ fetch("../js/novedades.json")
         divCosasNuevas.append(figure)
 
     })
-}) /*Unicamente hace dinamicas las fotos de los lentes por venir, al obtenerlas de un json */
+}) /*Unicamente hace dinamicas las fotos de los lentes por venir, al obtenerlas de un json, como en aubier4.js */

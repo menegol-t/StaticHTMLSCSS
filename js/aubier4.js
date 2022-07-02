@@ -23,7 +23,7 @@ fetch("../js/productos.json")
         `
         divProductos.append(article)
 
-    }) //Esto pone dinamicamente los productos en el html. 
+    }) //Esto pone dinamicamente los productos en el html, buscandolos del JSON. 
 
     let dijonbtn =  document.getElementById("dijonbtn")
     let lemansbtn = document.getElementById("lemansbtn")
@@ -35,7 +35,7 @@ fetch("../js/productos.json")
     lyonbtn.addEventListener("click", toast)
     nantesbtn.addEventListener("click", toast) 
 
-    //Esto añade funcionalidad a los botones de los productos para llamar a un toast.
+    /*Esto añade funcionalidad a los botones de los productos, que llaman a un toast.*/
 })
 
 //COMIENZA TOAST DE BOTON DE COMPRA
@@ -49,3 +49,4 @@ function toast(){
           }
     }).showToast();
 }
+//Este es el toast mencionado en la linea 38. 
