@@ -4,7 +4,6 @@ Como las paginas son relativas, arme otro de este codigo, pero para las demas pa
 let formBusqueda = document.getElementById("formBusqueda")
 let inputBoton = document.getElementById("inputBoton")
 
-
 formBusqueda.addEventListener("submit", (e) => {
     e.preventDefault()
 })
@@ -74,30 +73,42 @@ inputBoton.addEventListener("click", () => {
 se aseguren de buscar algo sin saltarse letras, debido que es un buscador bastante rudimentario
 pero bueno hago lo que puedo con lo que tengo :) */
 
-//Metodos de envio dinamicos
-const divFormasEnvio = document.getElementById("formasDeEnvio")
+//Imagenes del carousel dinamicas
+const imgsCarousel = document.getElementById("imgsCarousel")
 
-fetch("js/formasDeEnvio.json")
-    .then( (anteojos) => anteojos.json() )
+fetch("js/imgsCarousel.json")
+    .then( (imagen) => imagen.json() )
     .then((lentes) => {
 
     lentes.forEach((anteojo) => {
-        divFormasEnvio.innerHTML +=  `
-            <img src="${anteojo.src}" alt="${anteojo.alt}" class="footer__img--margin">
+        imgsCarousel.innerHTML +=  `
+        <div class="${anteojo.classDiv}">
+            <img src="${anteojo.src}" alt="${anteojo.alt}" class="d-block w-100">
+        </div>
         `
     })
 })
 
-//Metodos de pago dinamicos
-const divFormasPago = document.getElementById("formasDePago")
+//Metodos de envio dinamicos desde direccion relativa index
+buscarImagenesJSON ("formasDeEnvio")
 
-fetch("js/formasDePago.json")
-    .then( (anteojos) => anteojos.json() )
-    .then((lentes) => {
+//Metodos de pago dinamicos desde direccion relativa index
+buscarImagenesJSON ("formasDePago")
 
-    lentes.forEach((anteojo) => {
-        divFormasPago.innerHTML +=  `
-            <img src="${anteojo.src}" alt="${anteojo.alt}" class="footer__img--margin">
-        `
-    })
-})
+function buscarImagenesJSON(idHTML){
+    const div = document.getElementById(`${idHTML}`)
+    
+    fetch(`js/${idHTML}.json`)
+        .then((imagen) => imagen.json())
+        .then((lentes) => {
+            lentes.forEach((anteojo)=> {
+                div.innerHTML += `
+                <img src="${anteojo.src}" alt="${anteojo.alt}" class="${anteojo.class}">
+                `
+            })
+        })
+
+}/* Funcion que va a buscar imagenes a un JSON y las adjunta dentro de un div simplemente.
+Para que esto funcione, necesita que el nombre del id del div en el HTML y el nombre de JSON sean
+el mismo. 
+*/

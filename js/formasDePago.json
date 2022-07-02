@@ -1,6 +1,6 @@
 [
-    {"src": "img/chiquitos/paypal.png", "alt": "paypal"},
-    {"src": "img/chiquitos/mercadopago.png", "alt": "mercadopago"},
-    {"src": "img/chiquitos/visa.png", "alt": "visa"},
-    {"src": "img/chiquitos/mastercard.png", "alt": "mastercard"}
+    {"src": "img/chiquitos/paypal.png", "alt": "paypal", "class" : "footer__img--margin"},
+    {"src": "img/chiquitos/mercadopago.png", "alt": "mercadopago", "class" : "footer__img--margin"},
+    {"src": "img/chiquitos/visa.png", "alt": "visa", "class" : "footer__img--margin"},
+    {"src": "img/chiquitos/mastercard.png", "alt": "mastercard", "class" : "footer__img--margin"}
 ]

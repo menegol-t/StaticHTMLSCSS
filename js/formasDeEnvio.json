@@ -1,4 +1,4 @@
 [
-    {"src": "img/chiquitos/OCA.png", "alt":"OCA, compañia de envios"},
-    {"src": "img/chiquitos/correoargentino.png", "alt": "correo argentino"}
+    {"src": "img/chiquitos/OCA.png", "alt":"OCA, compañia de envios", "class" : "footer__img--margin"},
+    {"src": "img/chiquitos/correoargentino.png", "alt": "correo argentino", "class" : "footer__img--margin"}
 ]

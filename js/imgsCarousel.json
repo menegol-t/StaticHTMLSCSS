@@ -1,0 +1,5 @@
+[
+    {"src" : "img/nantes/nantes.webp", "alt" : "Lentes modelo LeMans acomodados sobre un poste en el puerto", "classDiv" : "carousel-item active", "class" : "d-block w-100"},
+    {"src" : "img/lyon/lyon.webp", "alt" : "Modelo Dijon, con marco de mandera roja y negra a rayas", "classDiv" : "carousel-item", "class" : "d-block w-100"},
+    {"src" : "img/lemans/lemans.webp", "alt" : "Lentes modelo Lyon", "classDiv" : "carousel-item", "class" : "d-block w-100"}
+]
