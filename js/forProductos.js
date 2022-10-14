@@ -41,7 +41,7 @@ fetch("../js/productos.json")
 //COMIENZA TOAST DE BOTON DE COMPRA
 function toast(){
     Toastify({
-        text: "Te avisaremos cuando se habiliten las compras!",
+        text: "Chequea mi ReactJS proyect para ver esta funcionalidad!",
         duration: 3000,
         gravity: "bottom",
         style: {

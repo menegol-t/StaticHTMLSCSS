@@ -1,5 +1,5 @@
 
-//BOTON DE BUSQUEDA (desde la ubicacion de pages) Como las paginas son relativas, arme otro para el index
+//BOTON DE BUSQUEDA (desde la ubicacion /pages) Como las paginas son relativas, arme otro para el index
 
 let formBusqueda = document.getElementById("formBusqueda")
 let inputBoton = document.getElementById("inputBoton")
@@ -73,6 +73,8 @@ inputBoton.addEventListener("click", () => {
 /*Un boton de busqueda con varias palabras de interes. Solo funciona cuando hace click para que 
 se aseguren de buscar algo sin saltarse letras, debido que es un buscador bastante rudimentario
 pero bueno hago lo que puedo con lo que tengo :) */
+
+//METODOS PARA FOOTER desde la ubicacion /Pages
 
 //Metodos de envio dinamicos
 const divFormasEnvio = document.getElementById("formasDeEnvio")
