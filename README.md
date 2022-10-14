@@ -1,13 +1,13 @@
 ### Hi there 👋
 This is my web project! It's basically a proof of concept to get me familiarised with the basics of front-end development. 
 
+This proyect is deployed [here](https://menegol-t.github.io/menegol-t/).
+
 The main objective was to test my knowledge in HTML, CSS, SCSS, JavaScript & Git. It's got a couple of libraries like Bootstrap or SweetAlert2, but that's it. 
 
-So it's a fairly unsophisticated website, but thats what improvement is all about! To date, i have improved it by replicating the "e-commerce" aspect in another proyect of mine which uses ReactJS, so be sure to check that out.
+So it's a fairly unsophisticated website, but thats what improvement is all about! To date, i have improved it by replicating the "e-commerce" aspect in another proyect of mine which uses ReactJS that i'll link at the bottom, so be sure to check that out. 
 
-This proyect is deployed [here](https://menegol-t.github.io/menegol-t/). 
-
-I organised the JS files based on what page they are called from. So for example, the JS file that calls teh images in the Index dinamically from a JSON file is called fromIndex.js
+I organised the JS files based on what HTML they are called from. So for example, the JS file that puts the images in the Index dinamically from a JSON file is called fromIndex.js, because that JS file is only called by the index.html
 
 Demo functionalities:
 
