@@ -1,4 +1,4 @@
-//Gifs de gatitos para el error 404 en el link a Facebook e Instagram en el footer, usando API thecatAPI
+//El error 404 en el link a Facebook e Instagram en el footer, usando API thecatAPI
 function conseguirGatito(url, gatitoConseguido) {
     let xmlhttp = new XMLHttpRequest(); 
     xmlhttp.onreadystatechange = function() {

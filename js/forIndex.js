@@ -73,7 +73,7 @@ inputBoton.addEventListener("click", () => {
 se aseguren de buscar algo sin saltarse letras, debido que es un buscador bastante rudimentario
 pero bueno hago lo que puedo con lo que tengo :) */
 
-//Imagenes del carousel dinamicas
+//Imagenes del Index carousel dinamicas
 const imgsCarousel = document.getElementById("imgsCarousel")
 
 fetch("js/imgsCarousel.json")
