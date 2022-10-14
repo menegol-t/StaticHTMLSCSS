@@ -13,7 +13,7 @@ Demo functionalities:
 
 * It has a VERY rudamentary search bar (try the key-word "madera" and click the button!). You can see all of the keywords in the "contentForPages.js" file. 
 
-* It pulls the images dinamicaly from te /imgs folder (unlike my react proyect that uses cloud storage) via a JSON document so as to make the proyect scallable. 
+* It pulls images dinamicaly from the /imgs folder (unlike my react proyect that uses cloud storage) via a JSON document so as to make the proyect scallable. If you put more products on the JSON, they'll be displayed automatically (provided you put the correct path to an existing image in /imgs). 
 
 * It has a basic contact form that will save user data in "novedades.html". The data is saved locally on local storage (unlike my reactJS proyect), but it has all the logic to check if you were already registered in the past, wether you missed a data field etc. To check the logic go to "forNovedades.js"
 
