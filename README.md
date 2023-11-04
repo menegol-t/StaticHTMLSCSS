@@ -1,7 +1,7 @@
 ### Hi there 👋
 This is my web project! It's basically a proof of concept to get me familiarised with the basics of front-end development. 
 
-This proyect is deployed [here](https://menegol-t.github.io/menegol-t/).
+This proyect is deployed [here](https://menegol-t.github.io/StaticHTMLSCSS/).
 
 The main objective was to test my knowledge in HTML, CSS, SCSS, JavaScript & Git. It's got a couple of libraries like Bootstrap or SweetAlert2, but that's it. 
 
